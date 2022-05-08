@@ -8,7 +8,7 @@ import { useMediaQuery } from "@material-ui/core";
 
 const Hero = () => {
   useEffect(() => {
-    document.title = "Mohit | Home";
+    document.title = "Mohit Maroliya | Home";
   }, []);
 
   const isMobileorTablet = useMediaQuery("(max-width:1024px)");

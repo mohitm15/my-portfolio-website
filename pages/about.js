@@ -35,7 +35,7 @@ import { motion } from "framer-motion";
 const About = () => {
 
   useEffect(() => {
-    document.title = "Mohit | About"
+    document.title = "Mohit Maroliya | About"
   }, [])
   
 

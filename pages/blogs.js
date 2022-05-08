@@ -53,7 +53,7 @@ const data = [
 
 const Blogs = () => {
   useEffect(() => {
-    document.title = "Mohit | Blogs";
+    document.title = "Mohit Maroliya | Blogs";
   }, []);
 
   return (

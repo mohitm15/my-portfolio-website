@@ -12,7 +12,7 @@ import { motion } from "framer-motion";
 const Contact = () => {
 
   useEffect(() => {
-    document.title = "Mohit | Contacts"
+    document.title = "Mohit Maroliya | Contacts"
   }, [])
   
   return (
