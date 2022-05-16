@@ -84,7 +84,7 @@ const Hero = () => {
                 {/* <motion.span animate={starmotion} transition={{ repeat: Infinity, repeatType: "loop", duration: isMobileorTablet ? 1:3, interval:3 }}  className="before:absolute before:-translate-y-2/4 before:w-72 before:h-px before:bg-gradient-to-r mt-px before:from-white absolute w-2 h-2 opacity-90 bg-white rounded-lg shadow-5xl animate-star hidden xl:block"></motion.span> */}
               </div>
               <div className="w-full text-justify sm:text-clip md:w-4/5 xl:w-3/5 p-3 hover:drop-shadow-2xl bg-opacity-50">
-                <p className="text-sm sm:text-xl text-gray-100/80 font-light sm:tracking-wider z-10 opacity-100">
+                <p className="text-sm sm:text-xl text-gray-100/80 font-light sm:tracking-wider z-10 opacity-100 selection:bg-blue-200 selection:text-blue-900">
                   Hello everyone, I am Mohit Maroliya. I am a Indian-based
                   Software Developer who has a slight inclination building
                   websites with good UI. Most of the time you can find me
@@ -96,12 +96,12 @@ const Hero = () => {
               </div>
 
               <div className="py-4 sm:py-8 px-3 space-y-3 space-x-0 sm:space-y-0 sm:space-x-10 opacity-100">
-                <Link href="/about ">
-                  <button className="text-white text-lg sm:text-xl font-bold py-3 px-6 bg-gradient-to-r from-teal-500/75 to-purple-500/50 rounded-2xl hover:border-[1px] border-white hover:drop-shadow-3xl ">
+                <Link href="/about" className="focus:ring-1 focus:ring-yellow-400">
+                  <button className="text-white text-lg sm:text-xl font-bold py-3 px-6 bg-gradient-to-r from-teal-500/75 to-purple-500/50 rounded-2xl hover:ring-[1px] ring-white hover:drop-shadow-3xl focus:ring-2 focus:ring-white focus:outline-none">
                     Learn More
                   </button>
                 </Link>
-                <button className="text-white text-lg sm:text-xl font-bold py-3 px-6 bg-gradient-to-r from-teal-500/75 to-purple-500/50 rounded-2xl hover:border-[1px] border-white hover:drop-shadow-3xl">
+                <button className="text-white text-lg sm:text-xl font-bold py-3 px-6 bg-gradient-to-r from-teal-500/75 to-purple-500/50 rounded-2xl hover:ring-[1px] ring-white hover:drop-shadow-3xl focus:ring-2 focus:ring-white focus:outline-none">
                   <a
                     href="https://drive.google.com/u/0/uc?id=18w36fVGMM2F2Vif8tEfhjG9nHLenjVsC&export=download"
                     download="Resume_Mohit_Maroliya.pdf"

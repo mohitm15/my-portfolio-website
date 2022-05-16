@@ -62,10 +62,10 @@ const Projects = () => {
               {/* 1st row */}
               <div className="p-2 sm:p-10 flex flex-col lg:flex-row items-center space-y-3 lg:space-y-0 lg:space-x-16 justify-center">
                 {/* card1  mschatapp*/}
-                <motion.div initial={{opacity:0.3}} whileInView={{opacity:1}} className="card w-full h-full bg-transparent hover:bg-gradient-to-r hover: hover:to-[#b2eff7] transition hover:rounded-lg hover:drop-shadow-3xl hover:ease-in-oute ">
+                <motion.div initial={{opacity:0.3}} whileInView={{opacity:1}} className="card w-full h-full bg-transparent hover:bg-gradient-to-r hover: hover:to-[#b2eff7] transition hover:rounded-lg hover:drop-shadow-3xl hover:ease-in-out ">
                   <div
                     
-                    className="transition p-2 flex flex-col items-center bg-gradient-to-r from-[#ffa0ae,5%] to-[#b2eff7]  rounded-lg border shadow-md sm:flex-row md:max-w-6xl md:max-h-96 hover:cursor-pointer hover:from-[#ffa0ae,5%] hover:to-[#b2eff7] hover:transition hover:duration-500 ease-in-out  opacity-90 hover:opacity-100"
+                    className="card-project"
                   >
                     <div className="block sm:hidden">
                     <Image
@@ -80,7 +80,7 @@ const Projects = () => {
                     <Image
                       width="500%"
                       height="1000%"
-                      className="object-cover rounded-t-lg md:h-auto md:w-48 md:rounded-none md:rounded-l-lg"
+                      className="object-cover rounded-t-lg md:h-auto md:w-48 md:rounded-none md:rounded-l-lg shrink-0"
                       src={imgurl1s}
                       alt=""
                     />
@@ -144,12 +144,12 @@ const Projects = () => {
                       </div>
                     </div>
                   </div>
-                </motion.div>
+                 </motion.div>
                 {/* card2  Chesswear*/}
-                <motion.div initial={{opacity:0.3}} whileInView={{opacity:1}} className="card w-full h-full bg-transparent hover:bg-gradient-to-r hover:from-[#fc91a1] hover:to-[#a7cffd] transition hover:rounded-lg hover:drop-shadow-3xl hover:ease-in-oute ">
+                <motion.div initial={{opacity:0.3}} whileInView={{opacity:1}} className="outer-card-project ">
                   <div
                     
-                    className="transition p-2 flex flex-col items-center bg-gradient-to-r from-[#ffa0ae,5%] to-[#b2eff7]  rounded-lg border shadow-md sm:flex-row md:max-w-6xl md:max-h-96 hover:cursor-pointer hover:from-[#ffa0ae,5%] hover:to-[#b2eff7] hover:transition hover:duration-500 ease-in-out  opacity-90 hover:opacity-100"
+                    className="card-project"
                   >
                     <div className="block sm:hidden">
                     <Image
@@ -164,7 +164,7 @@ const Projects = () => {
                     <Image
                       width="500%"
                       height="1000%"
-                      className="object-cover rounded-t-lg md:h-auto md:w-48 md:rounded-none md:rounded-l-lg"
+                      className="object-cover rounded-t-lg md:h-auto md:w-48 md:rounded-none md:rounded-l-lg shrink-0"
                       src={imgurl10s}
                       alt=""
                     />
@@ -221,16 +221,16 @@ const Projects = () => {
                       </div>
                     </div>
                   </div>
-                </motion.div>
+                 </motion.div>
               </div>
 
               {/* 2nd row */}
               <div className="p-2 sm:p-10 flex flex-col lg:flex-row items-center space-y-3 lg:space-y-0 lg:space-x-16 justify-center">
                 {/* card1  myportfolio*/}
-                <motion.div initial={{opacity:0.3}} whileInView={{opacity:1}} className="card w-full h-full bg-transparent hover:bg-gradient-to-r hover:from-[#fc91a1] hover:to-[#a7cffd] transition hover:rounded-lg hover:drop-shadow-3xl hover:ease-in-oute ">
+                <motion.div initial={{opacity:0.3}} whileInView={{opacity:1}} className="outer-card-project">
                   <div
                     
-                    className="transition p-2 flex flex-col items-center bg-gradient-to-r from-[#ffa0ae,5%] to-[#b2eff7]  rounded-lg border shadow-md sm:flex-row md:max-w-6xl md:max-h-96 hover:cursor-pointer hover:from-[#ffa0ae,5%] hover:to-[#b2eff7] hover:transition hover:duration-500 ease-in-out  opacity-90 hover:opacity-100"
+                    className="card-project"
                   >
                     <div className="block sm:hidden">
                     <Image
@@ -245,7 +245,7 @@ const Projects = () => {
                     <Image
                       width="500%"
                       height="1000%"
-                      className="object-cover rounded-t-lg md:h-auto md:w-48 md:rounded-none md:rounded-l-lg"
+                      className="object-cover rounded-t-lg md:h-auto md:w-48 md:rounded-none md:rounded-l-lg shrink-0"
                       src={imgurl8s}
                       alt=""
                     />
@@ -299,13 +299,13 @@ const Projects = () => {
                       </div>
                     </div>
                   </div>
-                </motion.div>
+                 </motion.div>
 
                 {/* card2 weatherlytics*/}
-                <motion.div initial={{opacity:0.3}} whileInView={{opacity:1}} className="card w-full h-full bg-transparent hover:bg-gradient-to-r hover:from-[#fc91a1] hover:to-[#a7cffd] transition hover:rounded-lg hover:drop-shadow-3xl hover:ease-in-oute ">
+                <motion.div initial={{opacity:0.3}} whileInView={{opacity:1}} className="outer-card-project ">
                   <div
                     
-                    className="transition p-2 flex flex-col items-center bg-gradient-to-r from-[#ffa0ae,5%] to-[#b2eff7]  rounded-lg border shadow-md sm:flex-row md:max-w-6xl md:max-h-96 hover:cursor-pointer hover:from-[#ffa0ae,5%] hover:to-[#b2eff7] hover:transition hover:duration-500 ease-in-out  opacity-90 hover:opacity-100"
+                    className="card-project"
                   >
                     <div className="block sm:hidden">
                     <Image
@@ -320,7 +320,7 @@ const Projects = () => {
                     <Image
                       width="500%"
                       height="1000%"
-                      className="object-cover rounded-t-lg md:h-auto md:w-48 md:rounded-none md:rounded-l-lg"
+                      className="object-cover rounded-t-lg md:h-auto md:w-48 md:rounded-none md:rounded-l-lg shrink-0"
                       src={imgurl9s}
                       alt=""
                     />
@@ -374,7 +374,7 @@ const Projects = () => {
                       </div>
                     </div>
                   </div>
-                </motion.div>
+                 </motion.div>
 
                 
               </div>
@@ -383,10 +383,10 @@ const Projects = () => {
               <div className="p-2 sm:p-10 flex flex-col lg:flex-row items-center space-y-3 lg:space-y-0 lg:space-x-16 justify-center">
 
                 {/* card1 notebook*/}
-                <motion.div initial={{opacity:0.3}} whileInView={{opacity:1}} className="card w-full h-full bg-transparent hover:bg-gradient-to-r hover:from-[#fc91a1] hover:to-[#a7cffd] transition hover:rounded-lg hover:drop-shadow-3xl hover:ease-in-oute ">
+                <motion.div initial={{opacity:0.3}} whileInView={{opacity:1}} className="outer-card-project ">
                   <div
                     
-                    className="transition p-2 flex flex-col items-center bg-gradient-to-r from-[#ffa0ae,5%] to-[#b2eff7]  rounded-lg border shadow-md sm:flex-row md:max-w-6xl md:max-h-96 hover:cursor-pointer hover:from-[#ffa0ae,5%] hover:to-[#b2eff7] hover:transition hover:duration-500 ease-in-out  opacity-90 hover:opacity-100"
+                    className="card-project"
                   >
                     <div className="block sm:hidden">
                     <Image
@@ -401,7 +401,7 @@ const Projects = () => {
                     <Image
                       width="500%"
                       height="1000%"
-                      className="object-cover rounded-t-lg md:h-auto md:w-48 md:rounded-none md:rounded-l-lg"
+                      className="object-cover rounded-t-lg md:h-auto md:w-48 md:rounded-none md:rounded-l-lg shrink-0"
                       src={imgurl3l}
                       alt=""
                     />
@@ -466,13 +466,13 @@ const Projects = () => {
                       </div>
                     </div>
                   </div>
-                </motion.div>
+                 </motion.div>
 
                 {/* card2  authlogin*/}
-                <motion.div initial={{opacity:0.3}} whileInView={{opacity:1}} className="card w-full h-full bg-transparent hover:bg-gradient-to-r hover:from-[#fc91a1] hover:to-[#a7cffd] transition hover:rounded-lg hover:drop-shadow-3xl hover:ease-in-oute ">
+                <motion.div initial={{opacity:0.3}} whileInView={{opacity:1}} className="outer-card-project ">
                   <div
                     
-                    className="transition p-2 flex flex-col items-center bg-gradient-to-r from-[#ffa0ae,5%] to-[#b2eff7]  rounded-lg border shadow-md sm:flex-row md:max-w-6xl md:max-h-96 hover:cursor-pointer hover:from-[#ffa0ae,5%] hover:to-[#b2eff7] hover:transition hover:duration-500 ease-in-out  opacity-90 hover:opacity-100"
+                    className="card-project"
                   >
                     <div className="block sm:hidden">
                     <Image
@@ -487,7 +487,7 @@ const Projects = () => {
                     <Image
                       width="500%"
                       height="1000%"
-                      className="object-cover rounded-t-lg md:h-auto md:w-48 md:rounded-none md:rounded-l-lg"
+                      className="object-cover rounded-t-lg md:h-auto md:w-48 md:rounded-none md:rounded-l-lg shrink-0"
                       src={imgurl4s}
                       alt=""
                     />
@@ -549,17 +549,17 @@ const Projects = () => {
                       </div>
                     </div>
                   </div>
-                </motion.div>
+                 </motion.div>
               </div>
 
               {/* 4th row */}
               <div className="p-2 sm:p-10 flex flex-col lg:flex-row items-center space-y-3 lg:space-y-0 lg:space-x-16 justify-center">
 
                 {/* card1 redux*/}
-                <motion.div initial={{opacity:0.3}} whileInView={{opacity:1}} className="card w-full h-full bg-transparent hover:bg-gradient-to-r hover:from-[#fc91a1] hover:to-[#a7cffd] transition hover:rounded-lg hover:drop-shadow-3xl hover:ease-in-oute ">
+                <motion.div initial={{opacity:0.3}} whileInView={{opacity:1}} className="outer-card-project ">
                   <div
                     
-                    className="transition p-2 flex flex-col items-center bg-gradient-to-r from-[#ffa0ae,5%] to-[#b2eff7]  rounded-lg border shadow-md sm:flex-row md:max-w-6xl md:max-h-96 hover:cursor-pointer hover:from-[#ffa0ae,5%] hover:to-[#b2eff7] hover:transition hover:duration-500 ease-in-out  opacity-90 hover:opacity-100"
+                    className="card-project"
                   >
                     <div className="block sm:hidden">
                     <Image
@@ -574,7 +574,7 @@ const Projects = () => {
                     <Image
                       width="500%"
                       height="1000%"
-                      className="object-cover rounded-t-lg md:h-auto md:w-48 md:rounded-none md:rounded-l-lg"
+                      className="object-cover rounded-t-lg md:h-auto md:w-48 md:rounded-none md:rounded-l-lg shrink-0"
                       src={imgurl5s}
                       alt=""
                     />
@@ -629,13 +629,13 @@ const Projects = () => {
                       </div>
                     </div>
                   </div>
-                </motion.div>
+                 </motion.div>
 
                 {/* card2 redify*/}
-                <motion.div initial={{opacity:0.3}} whileInView={{opacity:1}} className="card w-full h-full bg-transparent hover:bg-gradient-to-r hover:from-[#fc91a1] hover:to-[#a7cffd] transition hover:rounded-lg hover:drop-shadow-3xl hover:ease-in-oute ">
+                <motion.div initial={{opacity:0.3}} whileInView={{opacity:1}} className="outer-card-project ">
                   <div
                     
-                    className="transition p-2 flex flex-col items-center bg-gradient-to-r from-[#ffa0ae,5%] to-[#b2eff7]  rounded-lg border shadow-md sm:flex-row md:max-w-6xl md:max-h-96 hover:cursor-pointer hover:from-[#ffa0ae,5%] hover:to-[#b2eff7] hover:transition hover:duration-500 ease-in-out  opacity-90 hover:opacity-100"
+                    className="card-project"
                   >
                     <div className="block sm:hidden">
                     <Image
@@ -650,7 +650,7 @@ const Projects = () => {
                     <Image
                       width="500%"
                       height="1000%"
-                      className="object-cover rounded-t-lg md:h-auto md:w-48 md:rounded-none md:rounded-l-lg"
+                      className="object-cover rounded-t-lg md:h-auto md:w-48 md:rounded-none md:rounded-l-lg shrink-0"
                       src={imgurl6s}
                       alt=""
                     />
@@ -709,7 +709,7 @@ const Projects = () => {
                       </div>
                     </div>
                   </div>
-                </motion.div>
+                 </motion.div>
               </div>
 
 
@@ -717,10 +717,10 @@ const Projects = () => {
               <div className="p-2 sm:p-10 flex flex-col lg:flex-row items-center space-y-3 lg:space-y-0 lg:space-x-16 justify-center">
 
                 {/* card1 timetravel*/}
-                <motion.div initial={{opacity:0.3}} whileInView={{opacity:1}} className="card w-full h-full bg-transparent hover:bg-gradient-to-r hover:from-[#fc91a1] hover:to-[#a7cffd] transition hover:rounded-lg hover:drop-shadow-3xl hover:ease-in-oute ">
+                <motion.div initial={{opacity:0.3}} whileInView={{opacity:1}} className="outer-card-project ">
                   <div
                     
-                    className="transition p-2 flex flex-col items-center bg-gradient-to-r from-[#ffa0ae,5%] to-[#b2eff7]  rounded-lg border shadow-md sm:flex-row md:max-w-6xl md:max-h-96 hover:cursor-pointer hover:from-[#ffa0ae,5%] hover:to-[#b2eff7] hover:transition hover:duration-500 ease-in-out  opacity-90 hover:opacity-100"
+                    className="card-project"
                   >
                     <div className="block sm:hidden">
                     <Image
@@ -735,7 +735,7 @@ const Projects = () => {
                     <Image
                       width="500%"
                       height="1000%"
-                      className="object-cover rounded-t-lg md:h-auto md:w-48 md:rounded-none md:rounded-l-lg"
+                      className="object-cover rounded-t-lg md:h-auto md:w-48 md:rounded-none md:rounded-l-lg shrink-0"
                       src={imgurl7s}
                       alt=""
                     />
@@ -789,14 +789,14 @@ const Projects = () => {
                       </div>
                     </div>
                   </div>
-                </motion.div>
+                 </motion.div>
 
 
                 {/* card2 chessmania*/}
-                <motion.div initial={{opacity:0.3}} whileInView={{opacity:1}} className="card w-full h-full bg-transparent hover:bg-gradient-to-r hover:from-[#fc91a1] hover:to-[#a7cffd] transition hover:rounded-lg hover:drop-shadow-3xl hover:ease-in-oute ">
+                <motion.div initial={{opacity:0.3}} whileInView={{opacity:1}} className="outer-card-project ">
                   <div
                     
-                    className="transition p-2 flex flex-col items-center bg-gradient-to-r from-[#ffa0ae,5%] to-[#b2eff7]  rounded-lg border shadow-md sm:flex-row md:max-w-6xl md:max-h-96 hover:cursor-pointer hover:from-[#ffa0ae,5%] hover:to-[#b2eff7] hover:transition hover:duration-500 ease-in-out  opacity-90 hover:opacity-100"
+                    className="card-project"
                   >
                     <div className="block sm:hidden">
                     <Image
@@ -811,7 +811,7 @@ const Projects = () => {
                     <Image
                       width="500%"
                       height="1000%"
-                      className="object-cover rounded-t-lg md:h-auto md:w-48 md:rounded-none md:rounded-l-lg"
+                      className="object-cover rounded-t-lg  md:h-auto md:w-48 md:rounded-none md:rounded-l-lg shrink-0"
                       src={imgurl2s}
                       alt=""
                     />

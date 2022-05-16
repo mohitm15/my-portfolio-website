@@ -60,7 +60,7 @@ const About = () => {
             </div>
           </div>
           <div className="px-5 container text-center mx-auto">
-            <p className="text-sm sm:text-lg text-gray-100/80 font-light tracking-wider leading-normal pb-4 lg:pb-8 hover:text-white hover:drop-shadow-2xl">
+            <p className="text-sm sm:text-lg text-gray-100/80 font-light tracking-wider leading-normal pb-4 lg:pb-8 hover:text-white hover:drop-shadow-2xl selection:bg-blue-200 selection:text-blue-900">
               My Name is <strong>Mohit Maroliya</strong>. I'm a Full Stack
               Developer. I completed my education from Indian Institute of
               Technology Jodhpur (2017-21) in CSE. Currently, I'm workings as a

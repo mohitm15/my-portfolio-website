@@ -107,7 +107,7 @@ const Blogs = () => {
                             );
                           })}
                         </h5>
-                        <p className="leading-relaxed lg:text-base xl:text-lg">
+                        <p className="leading-relaxed lg:text-base xl:text-lg selection:bg-blue-200 selection:text-blue-900 first-letter:text-7xl first-letter:mr-3 first-letter:float-left">
                           {element.content}
                         </p>
                       </div>
