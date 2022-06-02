@@ -508,13 +508,10 @@ const Projects = () => {
                       </h3>
                       <div className="text-black flex flex-row space-x-3 py-2">
                         <span>
-                          <SiReact className="hover:text-purple-900 hover:border-[1px] hover:border-purple-900 hover:scale-150 hover:rounded-xl " />
+                          <SiNextdotjs className="hover:text-purple-900 hover:border-[1px] hover:border-purple-900 hover:scale-150 hover:rounded-xl " />
                         </span>
                         <span>
                           <SiMongodb className="hover:text-purple-900 hover:border-[1px] hover:border-purple-900 hover:scale-150 hover:rounded-xl " />
-                        </span>
-                        <span>
-                          <FaNodeJs className="hover:text-purple-900 hover:border-[1px] hover:border-purple-900 hover:scale-150 hover:rounded-xl " />
                         </span>
                         <span>
                           <SiPostman className="hover:text-purple-900 hover:border-[1px] hover:border-purple-900 hover:scale-150 hover:rounded-xl " />
@@ -529,7 +526,7 @@ const Projects = () => {
                           data-bs-placement="bottom"
                           title="See Live">
                           <a
-                            href="https://authlogin-boilerplate-frontend-6dww0kmcf-mohitm15.vercel.app/"
+                            href="https://authlogin-boilerplate-2.vercel.app/"
                             target="_blank"
                           >
                             <FaEye size={18} />
@@ -540,7 +537,7 @@ const Projects = () => {
                           data-bs-placement="bottom"
                           title="See Code">
                           <a
-                            href="https://github.com/mohitm15/authlogin-boilerplate"
+                            href="https://github.com/mohitm15/authlogin-boilerplate-2"
                             target="_blank"
                           >
                             <HiCode size={18} />
