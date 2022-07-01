@@ -103,7 +103,7 @@ const Hero = () => {
                 </Link>
                 <button className="text-white text-lg sm:text-xl font-bold py-3 px-6 bg-gradient-to-r from-teal-500/75 to-purple-500/50 rounded-2xl hover:ring-[1px] ring-white hover:drop-shadow-3xl focus:ring-2 focus:ring-white focus:outline-none">
                   <a
-                    href="https://drive.google.com/u/0/uc?id=18w36fVGMM2F2Vif8tEfhjG9nHLenjVsC&export=download"
+                    href="https://drive.google.com/u/0/uc?id=1MsUYj92CejSXHyHbXpMeIerIiawOmibS&export=download"
                     download="Resume_Mohit_Maroliya.pdf"
                     target="_blank"
                   >

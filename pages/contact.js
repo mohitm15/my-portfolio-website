@@ -5,7 +5,7 @@ import {
   AiFillLinkedin,
   AiFillYoutube,
 } from "react-icons/ai";
-import { SiGmail, SiDevdotto, SiLichess } from "react-icons/si";
+import { SiGmail, SiDevdotto,SiStackoverflow } from "react-icons/si";
 import { motion } from "framer-motion";
 
 
@@ -64,8 +64,8 @@ const Contact = () => {
                 </motion.div>
                 {/* Lichess */}
                 <motion.div animate={{y:[0,4,0,-4,0]}}  transition={{delay:0.1,repeat:Infinity , duration:2}} whileTap={{scale:0.9}} className="p-2 md:p-3 lg:p-4 xl:p-5 2xl:p-6 hover:bg-gradient-to-r from-fuchsia-900 bg-slate-900 rounded-lg m-auto border-2">
-                  <a href="https://lichess.org/@/mohit_maroliya" target="_blank" className="hover:text-yellow-500 " >
-                    <SiLichess className="h-14 w-14 md:h-24 md:w-24 lg:h-28 lg:w-28 xl:h-32 xl:w-32 " />
+                  <a href="https://stackoverflow.com/users/10962364/rose-park" target="_blank" className="hover:text-yellow-500 " >
+                    <SiStackoverflow className="h-14 w-14 md:h-24 md:w-24 lg:h-28 lg:w-28 xl:h-32 xl:w-32 " />
                   </a>
                 </motion.div>
               </div>

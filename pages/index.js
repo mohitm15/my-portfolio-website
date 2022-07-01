@@ -13,7 +13,6 @@ export default function Home() {
         
       </Head>
 
-      {/* <Header /> */}
       <div className="min-h-full">
         <Header />
         <Hero />

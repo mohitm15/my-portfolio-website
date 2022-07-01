@@ -6,6 +6,7 @@ import imgurl2 from "../public/satelite.png";
 import {
   SiBootstrap,
   SiExpress,
+  SiExpo,
   SiJavascript,
   SiMongodb,
   SiNextdotjs,
@@ -30,6 +31,7 @@ import {
   SiVisualstudiocode,
 } from "react-icons/si";
 import { FaCss3, FaHtml5, FaNodeJs } from "react-icons/fa";
+import {RiReactjsLine} from "react-icons/ri"
 import { motion } from "framer-motion";
 
 const About = () => {
@@ -119,9 +121,16 @@ const About = () => {
               </div>
 
               <div className=" mx-auto flex-row justify-center items-center">
-                <FaHtml5 className="h-16 w-16 md:h-20 md:w-20 lg:h-24 lg:w-24 xl:h-32 xl:w-32 hover:drop-shadow-3xl opacity-90 hover:opacity-100" />
+                <SiExpo className="h-16 w-16 md:h-20 md:w-20 lg:h-24 lg:w-24 xl:h-32 xl:w-32 hover:drop-shadow-3xl opacity-90 hover:opacity-100" />
                 <span className="text-center lg:text-lg sm:ml-1 md:ml-2 lg:ml-4 xl:ml-7 ">
                   HTML-5
+                </span>
+              </div>
+
+              <div className=" mx-auto flex-row justify-center items-center">
+                <FaHtml5 className="h-16 w-16 md:h-20 md:w-20 lg:h-24 lg:w-24 xl:h-32 xl:w-32 hover:drop-shadow-3xl opacity-90 hover:opacity-100" />
+                <span className="text-center lg:text-lg sm:ml-1 md:ml-2 lg:ml-4 xl:ml-7 ">
+                  export
                 </span>
               </div>
 
@@ -154,9 +163,9 @@ const About = () => {
               </div>
 
               <div className=" mx-auto flex-row justify-center items-center">
-                <SiMaterialui className="h-16 w-16 md:h-20 md:w-20 lg:h-24 lg:w-24 xl:h-32 xl:w-32 hover:drop-shadow-3xl opacity-90 hover:opacity-100" />
+                <RiReactjsLine className="h-16 w-16 md:h-20 md:w-20 lg:h-24 lg:w-24 xl:h-32 xl:w-32 hover:drop-shadow-3xl opacity-90 hover:opacity-100" />
                 <span className="text-center lg:text-lg sm:ml-1 md:ml-2 lg:ml-4 xl:ml-7 ">
-                  MaterialUI
+                  ReactNative
                 </span>
               </div>
             </div>
