@@ -1,4 +1,4 @@
-import React, {useEffect} from "react";
+import React, { useEffect } from "react";
 import Header from "./components/Header";
 import imgurl1s from "../public/mssmall.png";
 import imgurl1l from "../public/mslarge.png";
@@ -20,10 +20,16 @@ import imgurl9s from "../public/9small.png";
 import imgurl9l from "../public/9large.png";
 import imgurl10s from "../public/10small.png";
 import imgurl10l from "../public/10large.png";
+import imgurl11s from "../public/11small.png";
+import imgurl11l from "../public/11large.png";
+import imgurl12s from "../public/12small.png";
+import imgurl12l from "../public/12large.png";
+
 import Image from "next/image";
 import {
   SiBootstrap,
   SiFramer,
+  SiExpo,
   SiJavascript,
   SiLichess,
   SiMongodb,
@@ -36,16 +42,15 @@ import {
 } from "react-icons/si";
 import { FaNodeJs, FaEye, FaHtml5, FaCss3, FaSpotify } from "react-icons/fa";
 import { HiCode } from "react-icons/hi";
+import { RiReactjsLine } from "react-icons/ri";
 import { AiOutlineApi } from "react-icons/ai";
 import { motion } from "framer-motion";
 
-
 const Projects = () => {
-
   useEffect(() => {
-    document.title = "Mohit Maroliya | Projects"
-  }, [])
-  
+    document.title = "Mohit Maroliya | Projects";
+  }, []);
+
   return (
     <>
       <div className="min-h-full">
@@ -58,32 +63,32 @@ const Projects = () => {
               </h2>
             </div>
             <div className="p-5 border-2 border-red-400/20 flex flex-col lg:flex-col items-center justify-center bg-[url('../public/stars2.jpg')]">
-
               {/* 1st row */}
               <div className="p-2 sm:p-10 flex flex-col lg:flex-row items-center space-y-3 lg:space-y-0 lg:space-x-16 justify-center">
                 {/* card1  mschatapp*/}
-                <motion.div initial={{opacity:0.3}} whileInView={{opacity:1}} className="card w-full h-full bg-transparent hover:bg-gradient-to-r hover: hover:to-[#b2eff7] transition hover:rounded-lg hover:drop-shadow-3xl hover:ease-in-out ">
-                  <div
-                    
-                    className="card-project"
-                  >
+                <motion.div
+                  initial={{ opacity: 0.3 }}
+                  whileInView={{ opacity: 1 }}
+                  className="card w-full h-full bg-transparent hover:bg-gradient-to-r hover: hover:to-[#b2eff7] transition hover:rounded-lg hover:drop-shadow-3xl hover:ease-in-out "
+                >
+                  <div className="card-project">
                     <div className="block sm:hidden">
-                    <Image
-                      height={350}
-                      width={700}
-                      className="object-cover rounded-t-lg "
-                      src={imgurl1l}
-                      alt=""
-                    />
+                      <Image
+                        height={350}
+                        width={700}
+                        className="object-cover rounded-t-lg "
+                        src={imgurl1l}
+                        alt=""
+                      />
                     </div>
                     <div className="hidden sm:block">
-                    <Image
-                      width="500%"
-                      height="1000%"
-                      className="object-cover rounded-t-lg md:h-auto md:w-48 md:rounded-none md:rounded-l-lg shrink-0"
-                      src={imgurl1s}
-                      alt=""
-                    />
+                      <Image
+                        width="500%"
+                        height="1000%"
+                        className="object-cover rounded-t-lg md:h-auto md:w-48 md:rounded-none md:rounded-l-lg shrink-0"
+                        src={imgurl1s}
+                        alt=""
+                      />
                     </div>
                     <div className="flex flex-col justify-between p-3 leading-normal ">
                       <h5 className="mb-2 text-lg sm:text-2xl font-bold tracking-tight text-gray-900 ">
@@ -144,37 +149,41 @@ const Projects = () => {
                       </div>
                     </div>
                   </div>
-                 </motion.div>
+                </motion.div>
                 {/* card2  Chesswear*/}
-                <motion.div initial={{opacity:0.3}} whileInView={{opacity:1}} className="outer-card-project ">
-                  <div
-                    
-                    className="card-project"
-                  >
+                <motion.div
+                  initial={{ opacity: 0.3 }}
+                  whileInView={{ opacity: 1 }}
+                  className="outer-card-project "
+                >
+                  <div className="card-project">
                     <div className="block sm:hidden">
-                    <Image
-                      height={350}
-                      width={700}
-                      className="object-cover rounded-t-lg "
-                      src={imgurl10l}
-                      alt=""
-                    />
+                      <Image
+                        height={350}
+                        width={700}
+                        className="object-cover rounded-t-lg "
+                        src={imgurl10l}
+                        alt=""
+                      />
                     </div>
                     <div className="hidden sm:block">
-                    <Image
-                      width="500%"
-                      height="1000%"
-                      className="object-cover rounded-t-lg md:h-auto md:w-48 md:rounded-none md:rounded-l-lg shrink-0"
-                      src={imgurl10s}
-                      alt=""
-                    />
+                      <Image
+                        width="500%"
+                        height="1000%"
+                        className="object-cover rounded-t-lg md:h-auto md:w-48 md:rounded-none md:rounded-l-lg shrink-0"
+                        src={imgurl10s}
+                        alt=""
+                      />
                     </div>
                     <div className="flex flex-col justify-between p-3 leading-normal ">
                       <h5 className="mb-2 text-lg sm:text-2xl font-bold tracking-tight text-gray-900 ">
                         ChessWear
                       </h5>
                       <p className="mb-3 font-normal text-xsm sm:text-base text-justify text-gray-700 ">
-                      It is an e-commerce platform where you can find variety of Chess-Inspired items. Not only the conventional ChessBoards, but you can also try different Chess-based Tshirts & Hoddies.
+                        It is an e-commerce platform where you can find variety
+                        of Chess-Inspired items. Not only the conventional
+                        ChessBoards, but you can also try different Chess-based
+                        Tshirts & Hoddies.
                       </p>
                       <hr className="m-auto text-black bg-black" />
                       <h3 className="text-sm sm:text-base text-black font-semibold">
@@ -196,21 +205,27 @@ const Projects = () => {
                         <span>
                           <SiJsonwebtokens className="hover:text-purple-900 hover:border-[1px] hover:border-purple-900 hover:scale-150 hover:rounded-xl " />
                         </span>
-                        
                       </div>
                       <div className="flex flex-row items-center justify-between w-full lg:w-4/5 mt-3 lg:mt-5 mx-auto  bg-slate-300  rounded-lg">
-                        <button className="bg-indigo-900 text-sm sm:text-base text-white p-1 px-2 rounded-md hover:bg-indigo-800  hover:cursor-pointer transition duration-50 ease-in-out"
+                        <button
+                          className="bg-indigo-900 text-sm sm:text-base text-white p-1 px-2 rounded-md hover:bg-indigo-800  hover:cursor-pointer transition duration-50 ease-in-out"
                           data-bs-toggle="tooltip"
                           data-bs-placement="bottom"
-                          title="See Live">
-                          <a href="http://chesswear.vercel.app/" target="_blank">
+                          title="See Live"
+                        >
+                          <a
+                            href="http://chesswear.vercel.app/"
+                            target="_blank"
+                          >
                             <FaEye size={18} />
                           </a>
                         </button>
-                        <button className="bg-indigo-900 text-sm sm:text-base text-white p-1 px-2 rounded-md hover:bg-indigo-800  hover:cursor-pointer transition duration-50 ease-in-out"
+                        <button
+                          className="bg-indigo-900 text-sm sm:text-base text-white p-1 px-2 rounded-md hover:bg-indigo-800  hover:cursor-pointer transition duration-50 ease-in-out"
                           data-bs-toggle="tooltip"
                           data-bs-placement="bottom"
-                          title="See Code">
+                          title="See Code"
+                        >
                           <a
                             href="https://github.com/mohitm15/chesswear"
                             target="_blank"
@@ -221,41 +236,44 @@ const Projects = () => {
                       </div>
                     </div>
                   </div>
-                 </motion.div>
+                </motion.div>
               </div>
 
               {/* 2nd row */}
               <div className="p-2 sm:p-10 flex flex-col lg:flex-row items-center space-y-3 lg:space-y-0 lg:space-x-16 justify-center">
                 {/* card1  myportfolio*/}
-                <motion.div initial={{opacity:0.3}} whileInView={{opacity:1}} className="outer-card-project">
-                  <div
-                    
-                    className="card-project"
-                  >
+                <motion.div
+                  initial={{ opacity: 0.3 }}
+                  whileInView={{ opacity: 1 }}
+                  className="outer-card-project"
+                >
+                  <div className="card-project">
                     <div className="block sm:hidden">
-                    <Image
-                      height={350}
-                      width={700}
-                      className="object-cover rounded-t-lg "
-                      src={imgurl8l}
-                      alt=""
-                    />
+                      <Image
+                        height={350}
+                        width={700}
+                        className="object-cover rounded-t-lg "
+                        src={imgurl8l}
+                        alt=""
+                      />
                     </div>
                     <div className="hidden sm:block">
-                    <Image
-                      width="500%"
-                      height="1000%"
-                      className="object-cover rounded-t-lg md:h-auto md:w-48 md:rounded-none md:rounded-l-lg shrink-0"
-                      src={imgurl8s}
-                      alt=""
-                    />
+                      <Image
+                        width="500%"
+                        height="1000%"
+                        className="object-cover rounded-t-lg md:h-auto md:w-48 md:rounded-none md:rounded-l-lg shrink-0"
+                        src={imgurl8s}
+                        alt=""
+                      />
                     </div>
                     <div className="flex flex-col justify-between p-3 leading-normal ">
                       <h5 className="mb-2 text-lg sm:text-2xl font-bold tracking-tight text-gray-900 ">
                         My PortFolio Website
                       </h5>
                       <p className="mb-3 font-normal text-xsm sm:text-base text-justify text-gray-700 ">
-                        My-PortFolio-website is the website which showcases me. It includes some information about my proffesional world and also my major projects, blogs and contact details.
+                        My-PortFolio-website is the website which showcases me.
+                        It includes some information about my proffesional world
+                        and also my major projects, blogs and contact details.
                       </p>
                       <hr className="m-auto text-black bg-black" />
                       <h3 className="text-sm sm:text-base text-black font-semibold">
@@ -271,13 +289,14 @@ const Projects = () => {
                         <span>
                           <SiFramer className="hover:text-purple-900 hover:border-[1px] hover:border-purple-900 hover:scale-150 hover:rounded-xl " />
                         </span>
-                        
                       </div>
                       <div className="flex flex-row items-center justify-between w-full lg:w-4/5 mt-3 lg:mt-5 mx-auto  bg-slate-300  rounded-lg">
-                        <button className="bg-indigo-900 text-sm sm:text-base text-white p-1 px-2 rounded-md hover:bg-indigo-800  hover:cursor-pointer transition duration-50 ease-in-out"
+                        <button
+                          className="bg-indigo-900 text-sm sm:text-base text-white p-1 px-2 rounded-md hover:bg-indigo-800  hover:cursor-pointer transition duration-50 ease-in-out"
                           data-bs-toggle="tooltip"
                           data-bs-placement="bottom"
-                          title="See Live">
+                          title="See Live"
+                        >
                           <a
                             href="https://my-portfolio-website-steel.vercel.app/"
                             target="_blank"
@@ -285,10 +304,12 @@ const Projects = () => {
                             <FaEye size={18} />
                           </a>
                         </button>
-                        <button className="bg-indigo-900 text-sm sm:text-base text-white p-1 px-2 rounded-md hover:bg-indigo-800  hover:cursor-pointer transition duration-50 ease-in-out"
+                        <button
+                          className="bg-indigo-900 text-sm sm:text-base text-white p-1 px-2 rounded-md hover:bg-indigo-800  hover:cursor-pointer transition duration-50 ease-in-out"
                           data-bs-toggle="tooltip"
                           data-bs-placement="bottom"
-                          title="See Code">
+                          title="See Code"
+                        >
                           <a
                             href="https://github.com/mohitm15/my-portfolio-website"
                             target="_blank"
@@ -299,38 +320,42 @@ const Projects = () => {
                       </div>
                     </div>
                   </div>
-                 </motion.div>
+                </motion.div>
 
                 {/* card2 weatherlytics*/}
-                <motion.div initial={{opacity:0.3}} whileInView={{opacity:1}} className="outer-card-project ">
-                  <div
-                    
-                    className="card-project"
-                  >
+                <motion.div
+                  initial={{ opacity: 0.3 }}
+                  whileInView={{ opacity: 1 }}
+                  className="outer-card-project "
+                >
+                  <div className="card-project">
                     <div className="block sm:hidden">
-                    <Image
-                      height={350}
-                      width={700}
-                      className="object-cover rounded-t-lg "
-                      src={imgurl9l}
-                      alt=""
-                    />
+                      <Image
+                        height={350}
+                        width={700}
+                        className="object-cover rounded-t-lg "
+                        src={imgurl9l}
+                        alt=""
+                      />
                     </div>
                     <div className="hidden sm:block">
-                    <Image
-                      width="500%"
-                      height="1000%"
-                      className="object-cover rounded-t-lg md:h-auto md:w-48 md:rounded-none md:rounded-l-lg shrink-0"
-                      src={imgurl9s}
-                      alt=""
-                    />
+                      <Image
+                        width="500%"
+                        height="1000%"
+                        className="object-cover rounded-t-lg md:h-auto md:w-48 md:rounded-none md:rounded-l-lg shrink-0"
+                        src={imgurl9s}
+                        alt=""
+                      />
                     </div>
                     <div className="flex flex-col justify-between p-3 leading-normal ">
                       <h5 className="mb-2 text-lg sm:text-2xl font-bold tracking-tight text-gray-900 ">
                         WeatherLytics
                       </h5>
                       <p className="mb-3 font-normal text-xsm sm:text-base text-justify text-gray-700 ">
-                      Weather-Lytics is a project which shows the current weather & its forecast of any city in the world. It  includes Today's Weather highlights and weather forecast for upcoming week.
+                        Weather-Lytics is a project which shows the current
+                        weather & its forecast of any city in the world. It
+                        includes Today's Weather highlights and weather forecast
+                        for upcoming week.
                       </p>
                       <hr className="m-auto text-black bg-black" />
                       <h3 className="text-sm sm:text-base text-black font-semibold">
@@ -346,13 +371,14 @@ const Projects = () => {
                         <span>
                           <AiOutlineApi className="hover:text-purple-900 hover:border-[1px] hover:border-purple-900 hover:scale-150 hover:rounded-xl " />
                         </span>
-                        
                       </div>
                       <div className="flex flex-row items-center justify-between w-full lg:w-4/5 mt-3 lg:mt-5 mx-auto  bg-slate-300  rounded-lg">
-                        <button className="bg-indigo-900 text-sm sm:text-base text-white p-1 px-2 rounded-md hover:bg-indigo-800  hover:cursor-pointer transition duration-50 ease-in-out"
+                        <button
+                          className="bg-indigo-900 text-sm sm:text-base text-white p-1 px-2 rounded-md hover:bg-indigo-800  hover:cursor-pointer transition duration-50 ease-in-out"
                           data-bs-toggle="tooltip"
                           data-bs-placement="bottom"
-                          title="See Live">
+                          title="See Live"
+                        >
                           <a
                             href="https://weather-lytics.vercel.app/"
                             target="_blank"
@@ -360,10 +386,12 @@ const Projects = () => {
                             <FaEye size={18} />
                           </a>
                         </button>
-                        <button className="bg-indigo-900 text-sm sm:text-base text-white p-1 px-2 rounded-md hover:bg-indigo-800  hover:cursor-pointer transition duration-50 ease-in-out"
+                        <button
+                          className="bg-indigo-900 text-sm sm:text-base text-white p-1 px-2 rounded-md hover:bg-indigo-800  hover:cursor-pointer transition duration-50 ease-in-out"
                           data-bs-toggle="tooltip"
                           data-bs-placement="bottom"
-                          title="See Code">
+                          title="See Code"
+                        >
                           <a
                             href="https://github.com/mohitm15/Weather-Lytics"
                             target="_blank"
@@ -374,37 +402,200 @@ const Projects = () => {
                       </div>
                     </div>
                   </div>
-                 </motion.div>
-
-                
+                </motion.div>
               </div>
 
               {/*  3rd row */}
               <div className="p-2 sm:p-10 flex flex-col lg:flex-row items-center space-y-3 lg:space-y-0 lg:space-x-16 justify-center">
-
-                {/* card1 notebook*/}
-                <motion.div initial={{opacity:0.3}} whileInView={{opacity:1}} className="outer-card-project ">
-                  <div
-                    
-                    className="card-project"
-                  >
+                {/* card1 nftmarketplace*/}
+                <motion.div
+                  initial={{ opacity: 0.3 }}
+                  whileInView={{ opacity: 1 }}
+                  className="outer-card-project "
+                >
+                  <div className="card-project">
                     <div className="block sm:hidden">
-                    <Image
-                      height={350}
-                      width={700}
-                      className="object-cover rounded-t-lg "
-                      src={imgurl3s}
-                      alt=""
-                    />
+                      <Image
+                        height={350}
+                        width={700}
+                        className="object-cover rounded-t-lg "
+                        src={imgurl11l}
+                        alt=""
+                      />
                     </div>
                     <div className="hidden sm:block">
-                    <Image
-                      width="500%"
-                      height="1000%"
-                      className="object-cover rounded-t-lg md:h-auto md:w-48 md:rounded-none md:rounded-l-lg shrink-0"
-                      src={imgurl3l}
-                      alt=""
-                    />
+                      <Image
+                        width="500%"
+                        height="1000%"
+                        className="object-cover rounded-t-lg md:h-auto md:w-48 md:rounded-none md:rounded-l-lg shrink-0"
+                        src={imgurl11s}
+                        alt=""
+                      />
+                    </div>
+                    <div className="flex flex-col justify-between p-3 leading-normal ">
+                      <h5 className="mb-2 text-lg sm:text-2xl font-bold tracking-tight text-gray-900 ">
+                        NFT-Marketplace App
+                      </h5>
+                      <p className="mb-3 font-normal text-xsm sm:text-base text-justify text-gray-700 ">
+                        NFT MarketPlace App is a android application based on
+                        React-Native and Expo where you can Buy, Store, Collect
+                        NFTs and Earn crypto. Join 10 Million+ people using NFT
+                        MarketPlace App.
+                      </p>
+                      <hr className="m-auto text-black bg-black" />
+                      <h3 className="text-sm sm:text-base text-black font-semibold">
+                        Technologies
+                      </h3>
+                      <div className="text-black flex flex-row space-x-3 py-2">
+                        <span>
+                          <RiReactjsLine className="hover:text-purple-900 hover:border-[1px] hover:border-purple-900 hover:scale-150 hover:rounded-xl " />
+                        </span>
+                        <span>
+                          <SiExpo className="hover:text-purple-900 hover:border-[1px] hover:border-purple-900 hover:scale-150 hover:rounded-xl " />
+                        </span>
+                      </div>
+                      <div className="flex flex-row items-center justify-between w-full lg:w-4/5 mt-3 lg:mt-5 mx-auto  bg-slate-300  rounded-lg ">
+                        <button
+                          className="bg-indigo-900 text-sm sm:text-base text-white p-1 px-2 rounded-md hover:bg-indigo-800  hover:cursor-pointer transition duration-50 ease-in-out"
+                          data-bs-toggle="tooltip"
+                          data-bs-placement="bottom"
+                          title="See Live"
+                        >
+                          <a
+                            href="https://nft-market-place-showcase.vercel.app/"
+                            target="_blank"
+                          >
+                            <FaEye size={18} />
+                          </a>
+                        </button>
+                        <button
+                          className="bg-indigo-900 text-sm sm:text-base text-white p-1 px-2 rounded-md hover:bg-indigo-800  hover:cursor-pointer transition duration-50 ease-in-out"
+                          data-bs-toggle="tooltip"
+                          data-bs-placement="bottom"
+                          title="See Code"
+                        >
+                          <a
+                            href="https://github.com/mohitm15/NFT-MarketPlace-App"
+                            target="_blank"
+                          >
+                            <HiCode size={18} />
+                          </a>
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </motion.div>
+
+                {/* card2  todolist*/}
+                <motion.div
+                  initial={{ opacity: 0.3 }}
+                  whileInView={{ opacity: 1 }}
+                  className="outer-card-project "
+                >
+                  <div className="card-project">
+                    <div className="block sm:hidden">
+                      <Image
+                        height={350}
+                        width={700}
+                        className="object-cover rounded-t-lg "
+                        src={imgurl12l}
+                        alt=""
+                      />
+                    </div>
+                    <div className="hidden sm:block">
+                      <Image
+                        width="500%"
+                        height="1000%"
+                        className="object-cover rounded-t-lg md:h-auto md:w-48 md:rounded-none md:rounded-l-lg shrink-0"
+                        src={imgurl12s}
+                        alt=""
+                      />
+                    </div>
+                    <div className="flex flex-col justify-between p-3 leading-normal ">
+                      <h5 className="mb-2 text-lg sm:text-2xl font-bold tracking-tight text-gray-900 ">
+                        To-DoList App
+                      </h5>
+                      <p className="mb-3 font-normal text-xsm sm:text-base text-justify text-gray-700 ">
+                        ToDoList-App is a android application based on
+                        React-Native and Expo which keeps your Day-to-Day tasks.
+                        You can save your task first and then check it later
+                        when it gets completed.
+                      </p>
+                      <hr className="m-auto text-black bg-black" />
+                      <h3 className="text-sm sm:text-base text-black font-semibold">
+                        Technologies
+                      </h3>
+                      <div className="text-black flex flex-row space-x-3 py-2">
+                        <span>
+                          <RiReactjsLine className="hover:text-purple-900 hover:border-[1px] hover:border-purple-900 hover:scale-150 hover:rounded-xl " />
+                        </span>
+                        <span>
+                          <SiExpo className="hover:text-purple-900 hover:border-[1px] hover:border-purple-900 hover:scale-150 hover:rounded-xl " />
+                        </span>
+                        
+                        <span>
+                          <SiTailwindcss className="hover:text-purple-900 hover:border-[1px] hover:border-purple-900 hover:scale-150 hover:rounded-xl " />
+                        </span>
+                      </div>
+                      <div className="flex flex-row items-center justify-between w-full lg:w-4/5 mt-3 lg:mt-5 mx-auto  bg-slate-300  rounded-lg">
+                        <button
+                          className="bg-indigo-900 text-sm sm:text-base text-white p-1 px-2 rounded-md hover:bg-indigo-800  hover:cursor-pointer transition duration-50 ease-in-out"
+                          data-bs-toggle="tooltip"
+                          data-bs-placement="bottom"
+                          title="See Live"
+                        >
+                          <a
+                            href="https://github.com/mohitm15/ToDoList-App"
+                            target="_blank"
+                          >
+                            <FaEye size={18} />
+                          </a>
+                        </button>
+                        <button
+                          className="bg-indigo-900 text-sm sm:text-base text-white p-1 px-2 rounded-md hover:bg-indigo-800  hover:cursor-pointer transition duration-50 ease-in-out"
+                          data-bs-toggle="tooltip"
+                          data-bs-placement="bottom"
+                          title="See Code"
+                        >
+                          <a
+                            href="https://github.com/mohitm15/ToDoList-App"
+                            target="_blank"
+                          >
+                            <HiCode size={18} />
+                          </a>
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </motion.div>
+              </div>
+
+              {/*  4th row */}
+              <div className="p-2 sm:p-10 flex flex-col lg:flex-row items-center space-y-3 lg:space-y-0 lg:space-x-16 justify-center">
+                {/* card1 notebook*/}
+                <motion.div
+                  initial={{ opacity: 0.3 }}
+                  whileInView={{ opacity: 1 }}
+                  className="outer-card-project "
+                >
+                  <div className="card-project">
+                    <div className="block sm:hidden">
+                      <Image
+                        height={350}
+                        width={700}
+                        className="object-cover rounded-t-lg "
+                        src={imgurl3s}
+                        alt=""
+                      />
+                    </div>
+                    <div className="hidden sm:block">
+                      <Image
+                        width="500%"
+                        height="1000%"
+                        className="object-cover rounded-t-lg md:h-auto md:w-48 md:rounded-none md:rounded-l-lg shrink-0"
+                        src={imgurl3l}
+                        alt=""
+                      />
                     </div>
                     <div className="flex flex-col justify-between p-3 leading-normal ">
                       <h5 className="mb-2 text-lg sm:text-2xl font-bold tracking-tight text-gray-900 ">
@@ -441,10 +632,12 @@ const Projects = () => {
                         </span>
                       </div>
                       <div className="flex flex-row items-center justify-between w-full lg:w-4/5 mt-3 lg:mt-5 mx-auto  bg-slate-300  rounded-lg ">
-                        <button className="bg-indigo-900 text-sm sm:text-base text-white p-1 px-2 rounded-md hover:bg-indigo-800  hover:cursor-pointer transition duration-50 ease-in-out"
+                        <button
+                          className="bg-indigo-900 text-sm sm:text-base text-white p-1 px-2 rounded-md hover:bg-indigo-800  hover:cursor-pointer transition duration-50 ease-in-out"
                           data-bs-toggle="tooltip"
                           data-bs-placement="bottom"
-                          title="See Live">
+                          title="See Live"
+                        >
                           <a
                             href="https://my-notebook-mohit.netlify.app/"
                             target="_blank"
@@ -452,10 +645,12 @@ const Projects = () => {
                             <FaEye size={18} />
                           </a>
                         </button>
-                        <button className="bg-indigo-900 text-sm sm:text-base text-white p-1 px-2 rounded-md hover:bg-indigo-800  hover:cursor-pointer transition duration-50 ease-in-out"
+                        <button
+                          className="bg-indigo-900 text-sm sm:text-base text-white p-1 px-2 rounded-md hover:bg-indigo-800  hover:cursor-pointer transition duration-50 ease-in-out"
                           data-bs-toggle="tooltip"
                           data-bs-placement="bottom"
-                          title="See Code">
+                          title="See Code"
+                        >
                           <a
                             href="https://github.com/mohitm15/my-notebook"
                             target="_blank"
@@ -466,31 +661,32 @@ const Projects = () => {
                       </div>
                     </div>
                   </div>
-                 </motion.div>
+                </motion.div>
 
                 {/* card2  authlogin*/}
-                <motion.div initial={{opacity:0.3}} whileInView={{opacity:1}} className="outer-card-project ">
-                  <div
-                    
-                    className="card-project"
-                  >
+                <motion.div
+                  initial={{ opacity: 0.3 }}
+                  whileInView={{ opacity: 1 }}
+                  className="outer-card-project "
+                >
+                  <div className="card-project">
                     <div className="block sm:hidden">
-                    <Image
-                      height={350}
-                      width={700}
-                      className="object-cover rounded-t-lg "
-                      src={imgurl4l}
-                      alt=""
-                    />
+                      <Image
+                        height={350}
+                        width={700}
+                        className="object-cover rounded-t-lg "
+                        src={imgurl4l}
+                        alt=""
+                      />
                     </div>
                     <div className="hidden sm:block">
-                    <Image
-                      width="500%"
-                      height="1000%"
-                      className="object-cover rounded-t-lg md:h-auto md:w-48 md:rounded-none md:rounded-l-lg shrink-0"
-                      src={imgurl4s}
-                      alt=""
-                    />
+                      <Image
+                        width="500%"
+                        height="1000%"
+                        className="object-cover rounded-t-lg md:h-auto md:w-48 md:rounded-none md:rounded-l-lg shrink-0"
+                        src={imgurl4s}
+                        alt=""
+                      />
                     </div>
                     <div className="flex flex-col justify-between p-3 leading-normal ">
                       <h5 className="mb-2 text-lg sm:text-2xl font-bold tracking-tight text-gray-900 ">
@@ -521,10 +717,12 @@ const Projects = () => {
                         </span>
                       </div>
                       <div className="flex flex-row items-center justify-between w-full lg:w-4/5 mt-3 lg:mt-5 mx-auto  bg-slate-300  rounded-lg">
-                        <button className="bg-indigo-900 text-sm sm:text-base text-white p-1 px-2 rounded-md hover:bg-indigo-800  hover:cursor-pointer transition duration-50 ease-in-out"
+                        <button
+                          className="bg-indigo-900 text-sm sm:text-base text-white p-1 px-2 rounded-md hover:bg-indigo-800  hover:cursor-pointer transition duration-50 ease-in-out"
                           data-bs-toggle="tooltip"
                           data-bs-placement="bottom"
-                          title="See Live">
+                          title="See Live"
+                        >
                           <a
                             href="https://authlogin-boilerplate-2.vercel.app/"
                             target="_blank"
@@ -532,10 +730,12 @@ const Projects = () => {
                             <FaEye size={18} />
                           </a>
                         </button>
-                        <button className="bg-indigo-900 text-sm sm:text-base text-white p-1 px-2 rounded-md hover:bg-indigo-800  hover:cursor-pointer transition duration-50 ease-in-out"
+                        <button
+                          className="bg-indigo-900 text-sm sm:text-base text-white p-1 px-2 rounded-md hover:bg-indigo-800  hover:cursor-pointer transition duration-50 ease-in-out"
                           data-bs-toggle="tooltip"
                           data-bs-placement="bottom"
-                          title="See Code">
+                          title="See Code"
+                        >
                           <a
                             href="https://github.com/mohitm15/authlogin-boilerplate-2"
                             target="_blank"
@@ -546,35 +746,35 @@ const Projects = () => {
                       </div>
                     </div>
                   </div>
-                 </motion.div>
+                </motion.div>
               </div>
 
-              {/* 4th row */}
+              {/* 5th row */}
               <div className="p-2 sm:p-10 flex flex-col lg:flex-row items-center space-y-3 lg:space-y-0 lg:space-x-16 justify-center">
-
                 {/* card1 redux*/}
-                <motion.div initial={{opacity:0.3}} whileInView={{opacity:1}} className="outer-card-project ">
-                  <div
-                    
-                    className="card-project"
-                  >
+                <motion.div
+                  initial={{ opacity: 0.3 }}
+                  whileInView={{ opacity: 1 }}
+                  className="outer-card-project "
+                >
+                  <div className="card-project">
                     <div className="block sm:hidden">
-                    <Image
-                      height={350}
-                      width={700}
-                      className="object-cover rounded-t-lg "
-                      src={imgurl5l}
-                      alt=""
-                    />
+                      <Image
+                        height={350}
+                        width={700}
+                        className="object-cover rounded-t-lg "
+                        src={imgurl5l}
+                        alt=""
+                      />
                     </div>
                     <div className="hidden sm:block">
-                    <Image
-                      width="500%"
-                      height="1000%"
-                      className="object-cover rounded-t-lg md:h-auto md:w-48 md:rounded-none md:rounded-l-lg shrink-0"
-                      src={imgurl5s}
-                      alt=""
-                    />
+                      <Image
+                        width="500%"
+                        height="1000%"
+                        className="object-cover rounded-t-lg md:h-auto md:w-48 md:rounded-none md:rounded-l-lg shrink-0"
+                        src={imgurl5s}
+                        alt=""
+                      />
                     </div>
                     <div className="flex flex-col justify-between p-3 leading-normal ">
                       <h5 className="mb-2 text-lg sm:text-2xl font-bold tracking-tight text-gray-900 ">
@@ -583,7 +783,8 @@ const Projects = () => {
                       <p className="mb-3 font-normal text-xsm sm:text-base text-justify text-gray-700 ">
                         redux-boilerplate is a web application that can be
                         treated as a starter template to learn redux-store and
-                        how to manage various states in any hierarchal order in redux-store.
+                        how to manage various states in any hierarchal order in
+                        redux-store.
                       </p>
                       <hr className="m-auto text-black bg-black" />
                       <h3 className="text-sm sm:text-base text-black font-semibold">
@@ -601,10 +802,12 @@ const Projects = () => {
                         </span>
                       </div>
                       <div className="flex flex-row items-center justify-between w-full lg:w-4/5 mt-3 lg:mt-5 mx-auto  bg-slate-300  rounded-lg">
-                        <button className="bg-indigo-900 text-sm sm:text-base text-white p-1 px-2 rounded-md hover:bg-indigo-800  hover:cursor-pointer transition duration-50 ease-in-out"
+                        <button
+                          className="bg-indigo-900 text-sm sm:text-base text-white p-1 px-2 rounded-md hover:bg-indigo-800  hover:cursor-pointer transition duration-50 ease-in-out"
                           data-bs-toggle="tooltip"
                           data-bs-placement="bottom"
-                          title="See Live">
+                          title="See Live"
+                        >
                           <a
                             href="https://redux-starter-boilerplate.herokuapp.com/"
                             target="_blank"
@@ -612,10 +815,12 @@ const Projects = () => {
                             <FaEye size={18} />
                           </a>
                         </button>
-                        <button className="bg-indigo-900 text-sm sm:text-base text-white p-1 px-2 rounded-md hover:bg-indigo-800  hover:cursor-pointer transition duration-50 ease-in-out"
+                        <button
+                          className="bg-indigo-900 text-sm sm:text-base text-white p-1 px-2 rounded-md hover:bg-indigo-800  hover:cursor-pointer transition duration-50 ease-in-out"
                           data-bs-toggle="tooltip"
                           data-bs-placement="bottom"
-                          title="See Code">
+                          title="See Code"
+                        >
                           <a
                             href="https://github.com/mohitm15/redux-boilerplate/tree/master/redux-boilerplate"
                             target="_blank"
@@ -626,31 +831,32 @@ const Projects = () => {
                       </div>
                     </div>
                   </div>
-                 </motion.div>
+                </motion.div>
 
                 {/* card2 redify*/}
-                <motion.div initial={{opacity:0.3}} whileInView={{opacity:1}} className="outer-card-project ">
-                  <div
-                    
-                    className="card-project"
-                  >
+                <motion.div
+                  initial={{ opacity: 0.3 }}
+                  whileInView={{ opacity: 1 }}
+                  className="outer-card-project "
+                >
+                  <div className="card-project">
                     <div className="block sm:hidden">
-                    <Image
-                      height={350}
-                      width={700}
-                      className="object-cover rounded-t-lg "
-                      src={imgurl6l}
-                      alt=""
-                    />
+                      <Image
+                        height={350}
+                        width={700}
+                        className="object-cover rounded-t-lg "
+                        src={imgurl6l}
+                        alt=""
+                      />
                     </div>
                     <div className="hidden sm:block">
-                    <Image
-                      width="500%"
-                      height="1000%"
-                      className="object-cover rounded-t-lg md:h-auto md:w-48 md:rounded-none md:rounded-l-lg shrink-0"
-                      src={imgurl6s}
-                      alt=""
-                    />
+                      <Image
+                        width="500%"
+                        height="1000%"
+                        className="object-cover rounded-t-lg md:h-auto md:w-48 md:rounded-none md:rounded-l-lg shrink-0"
+                        src={imgurl6s}
+                        alt=""
+                      />
                     </div>
                     <div className="flex flex-col justify-between p-3 leading-normal ">
                       <h5 className="mb-2 text-lg sm:text-2xl font-bold tracking-tight text-gray-900 ">
@@ -681,21 +887,22 @@ const Projects = () => {
                         </span>
                       </div>
                       <div className="flex flex-row items-center justify-between w-full lg:w-4/5 mt-3 lg:mt-5 mx-auto  bg-slate-300  rounded-lg">
-                        <button className="bg-indigo-900 text-sm sm:text-base text-white p-1 px-2 rounded-md hover:bg-indigo-800  hover:cursor-pointer transition duration-50 ease-in-out"
+                        <button
+                          className="bg-indigo-900 text-sm sm:text-base text-white p-1 px-2 rounded-md hover:bg-indigo-800  hover:cursor-pointer transition duration-50 ease-in-out"
                           data-bs-toggle="tooltip"
                           data-bs-placement="bottom"
-                          title="See Live">
-                          <a
-                            href="http://redify.vercel.app/"
-                            target="_blank"
-                          >
+                          title="See Live"
+                        >
+                          <a href="http://redify.vercel.app/" target="_blank">
                             <FaEye size={18} />
                           </a>
                         </button>
-                        <button className="bg-indigo-900 text-sm sm:text-base text-white p-1 px-2 rounded-md hover:bg-indigo-800  hover:cursor-pointer transition duration-50 ease-in-out"
+                        <button
+                          className="bg-indigo-900 text-sm sm:text-base text-white p-1 px-2 rounded-md hover:bg-indigo-800  hover:cursor-pointer transition duration-50 ease-in-out"
                           data-bs-toggle="tooltip"
                           data-bs-placement="bottom"
-                          title="See Code">
+                          title="See Code"
+                        >
                           <a
                             href="https://github.com/mohitm15/Redify"
                             target="_blank"
@@ -706,44 +913,45 @@ const Projects = () => {
                       </div>
                     </div>
                   </div>
-                 </motion.div>
+                </motion.div>
               </div>
 
-
-              {/* 5th row */}
+              {/* 6th row */}
               <div className="p-2 sm:p-10 flex flex-col lg:flex-row items-center space-y-3 lg:space-y-0 lg:space-x-16 justify-center">
-
                 {/* card1 timetravel*/}
-                <motion.div initial={{opacity:0.3}} whileInView={{opacity:1}} className="outer-card-project ">
-                  <div
-                    
-                    className="card-project"
-                  >
+                <motion.div
+                  initial={{ opacity: 0.3 }}
+                  whileInView={{ opacity: 1 }}
+                  className="outer-card-project "
+                >
+                  <div className="card-project">
                     <div className="block sm:hidden">
-                    <Image
-                      height={350}
-                      width={700}
-                      className="object-cover rounded-t-lg "
-                      src={imgurl7l}
-                      alt=""
-                    />
+                      <Image
+                        height={350}
+                        width={700}
+                        className="object-cover rounded-t-lg "
+                        src={imgurl7l}
+                        alt=""
+                      />
                     </div>
                     <div className="hidden sm:block">
-                    <Image
-                      width="500%"
-                      height="1000%"
-                      className="object-cover rounded-t-lg md:h-auto md:w-48 md:rounded-none md:rounded-l-lg shrink-0"
-                      src={imgurl7s}
-                      alt=""
-                    />
+                      <Image
+                        width="500%"
+                        height="1000%"
+                        className="object-cover rounded-t-lg md:h-auto md:w-48 md:rounded-none md:rounded-l-lg shrink-0"
+                        src={imgurl7s}
+                        alt=""
+                      />
                     </div>
                     <div className="flex flex-col justify-between p-3 leading-normal ">
                       <h5 className="mb-2 text-lg sm:text-2xl font-bold tracking-tight text-gray-900 ">
                         Time Travel
                       </h5>
                       <p className="mb-3 font-normal text-xsm sm:text-base text-justify text-gray-700 ">
-                      Time-travel is an application from which anyone can check the time of major Asian Cities.
-                      It uses world-time API and country-flag API to display the time and flag for each country respectively.
+                        Time-travel is an application from which anyone can
+                        check the time of major Asian Cities. It uses world-time
+                        API and country-flag API to display the time and flag
+                        for each country respectively.
                       </p>
                       <hr className="m-auto text-black bg-black" />
                       <h3 className="text-sm sm:text-base text-black font-semibold">
@@ -761,10 +969,12 @@ const Projects = () => {
                         </span>
                       </div>
                       <div className="flex flex-row items-center justify-between w-full lg:w-4/5 mt-3 lg:mt-5 mx-auto  bg-slate-300  rounded-lg">
-                        <button className="bg-indigo-900 text-sm sm:text-base text-white p-1 px-2 rounded-md hover:bg-indigo-800  hover:cursor-pointer transition duration-50 ease-in-out"
+                        <button
+                          className="bg-indigo-900 text-sm sm:text-base text-white p-1 px-2 rounded-md hover:bg-indigo-800  hover:cursor-pointer transition duration-50 ease-in-out"
                           data-bs-toggle="tooltip"
                           data-bs-placement="bottom"
-                          title="See Live">
+                          title="See Live"
+                        >
                           <a
                             href="https://timetravel-mohit.netlify.app/"
                             target="_blank"
@@ -772,10 +982,12 @@ const Projects = () => {
                             <FaEye size={18} />
                           </a>
                         </button>
-                        <button className="bg-indigo-900 text-sm sm:text-base text-white p-1 px-2 rounded-md hover:bg-indigo-800  hover:cursor-pointer transition duration-50 ease-in-out"
+                        <button
+                          className="bg-indigo-900 text-sm sm:text-base text-white p-1 px-2 rounded-md hover:bg-indigo-800  hover:cursor-pointer transition duration-50 ease-in-out"
                           data-bs-toggle="tooltip"
                           data-bs-placement="bottom"
-                          title="See Code">
+                          title="See Code"
+                        >
                           <a
                             href="https://github.com/mohitm15/TimeTravel"
                             target="_blank"
@@ -786,32 +998,32 @@ const Projects = () => {
                       </div>
                     </div>
                   </div>
-                 </motion.div>
-
+                </motion.div>
 
                 {/* card2 chessmania*/}
-                <motion.div initial={{opacity:0.3}} whileInView={{opacity:1}} className="outer-card-project ">
-                  <div
-                    
-                    className="card-project"
-                  >
+                <motion.div
+                  initial={{ opacity: 0.3 }}
+                  whileInView={{ opacity: 1 }}
+                  className="outer-card-project "
+                >
+                  <div className="card-project">
                     <div className="block sm:hidden">
-                    <Image
-                      height={350}
-                      width={700}
-                      className="object-cover rounded-t-lg "
-                      src={imgurl2l}
-                      alt=""
-                    />
+                      <Image
+                        height={350}
+                        width={700}
+                        className="object-cover rounded-t-lg "
+                        src={imgurl2l}
+                        alt=""
+                      />
                     </div>
                     <div className="hidden sm:block">
-                    <Image
-                      width="500%"
-                      height="1000%"
-                      className="object-cover rounded-t-lg  md:h-auto md:w-48 md:rounded-none md:rounded-l-lg shrink-0"
-                      src={imgurl2s}
-                      alt=""
-                    />
+                      <Image
+                        width="500%"
+                        height="1000%"
+                        className="object-cover rounded-t-lg  md:h-auto md:w-48 md:rounded-none md:rounded-l-lg shrink-0"
+                        src={imgurl2s}
+                        alt=""
+                      />
                     </div>
                     <div className="flex flex-col justify-between p-3 leading-normal ">
                       <h5 className="mb-2 text-lg sm:text-2xl font-bold tracking-tight text-gray-900 ">
@@ -851,18 +1063,25 @@ const Projects = () => {
                         </span>
                       </div>
                       <div className="flex flex-row items-center justify-between w-full lg:w-4/5 mt-3 lg:mt-5 mx-auto  bg-slate-300  rounded-lg">
-                        <button className="bg-indigo-900 text-sm sm:text-base text-white p-1 px-2 rounded-md hover:bg-indigo-800  hover:cursor-pointer transition duration-50 ease-in-out"
+                        <button
+                          className="bg-indigo-900 text-sm sm:text-base text-white p-1 px-2 rounded-md hover:bg-indigo-800  hover:cursor-pointer transition duration-50 ease-in-out"
                           data-bs-toggle="tooltip"
                           data-bs-placement="bottom"
-                          title="See Live">
-                          <a href="http://chess-mania.vercel.app/" target="_blank">
+                          title="See Live"
+                        >
+                          <a
+                            href="http://chess-mania.vercel.app/"
+                            target="_blank"
+                          >
                             <FaEye size={18} />
                           </a>
                         </button>
-                        <button className="bg-indigo-900 text-sm sm:text-base text-white p-1 px-2 rounded-md hover:bg-indigo-800  hover:cursor-pointer transition duration-50 ease-in-out"
+                        <button
+                          className="bg-indigo-900 text-sm sm:text-base text-white p-1 px-2 rounded-md hover:bg-indigo-800  hover:cursor-pointer transition duration-50 ease-in-out"
                           data-bs-toggle="tooltip"
                           data-bs-placement="bottom"
-                          title="See Code">
+                          title="See Code"
+                        >
                           <a
                             href="https://github.com/mohitm15/ChessMania"
                             target="_blank"
@@ -874,8 +1093,6 @@ const Projects = () => {
                     </div>
                   </div>
                 </motion.div>
-
-                
               </div>
             </div>
           </div>

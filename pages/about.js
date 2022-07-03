@@ -123,14 +123,14 @@ const About = () => {
               <div className=" mx-auto flex-row justify-center items-center">
                 <SiExpo className="h-16 w-16 md:h-20 md:w-20 lg:h-24 lg:w-24 xl:h-32 xl:w-32 hover:drop-shadow-3xl opacity-90 hover:opacity-100" />
                 <span className="text-center lg:text-lg sm:ml-1 md:ml-2 lg:ml-4 xl:ml-7 ">
-                  HTML-5
+                  Expo
                 </span>
               </div>
 
               <div className=" mx-auto flex-row justify-center items-center">
                 <FaHtml5 className="h-16 w-16 md:h-20 md:w-20 lg:h-24 lg:w-24 xl:h-32 xl:w-32 hover:drop-shadow-3xl opacity-90 hover:opacity-100" />
                 <span className="text-center lg:text-lg sm:ml-1 md:ml-2 lg:ml-4 xl:ml-7 ">
-                  export
+                  HTML-5
                 </span>
               </div>
 
