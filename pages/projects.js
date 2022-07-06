@@ -104,18 +104,30 @@ const Projects = () => {
                       <h3 className="text-sm sm:text-base text-black font-semibold">
                         Technologies
                       </h3>
-                      <div className="text-black flex flex-row space-x-3 py-2">
-                        <span>
-                          <SiReact className="hover:text-purple-900 hover:border-[1px] hover:border-purple-900 hover:scale-150 hover:rounded-xl" />
+                      <div className="text-black flex flex-row space-x-3 py-2 ">
+                        <span className="group">
+                          <SiReact className="hover:text-purple-900  hover:border-purple-900 hover:scale-150 hover:rounded-xl" />
+                          <div className="bg-purple-100 absolute text-purple-900 text-xsm p-1 rounded-md ring-1 ring-purple-900 z-10 group-hover:block hidden mt-2 transition-transform">
+                            ReactJS
+                          </div>
                         </span>
-                        <span>
-                          <SiMongodb className="hover:text-purple-900 hover:border-[1px] hover:border-purple-900 hover:scale-150  hover:rounded-xl" />
+                        <span className="group">
+                          <SiMongodb className="hover:text-purple-900  hover:border-purple-900 hover:scale-150  hover:rounded-xl" />
+                          <div className="bg-purple-100 absolute text-purple-900 text-xsm p-1 rounded-md ring-1 ring-purple-900 z-10 group-hover:block hidden mt-2 transition-transform">
+                            MongoDB
+                          </div>
                         </span>
-                        <span>
-                          <FaNodeJs className="hover:text-purple-900 hover:border-[1px] hover:border-purple-900 hover:scale-150 hover:rounded-xl " />
+                        <span className="group">
+                          <FaNodeJs className="hover:text-purple-900  hover:border-purple-900 hover:scale-150 hover:rounded-xl " />
+                          <div className="bg-purple-100 absolute text-purple-900 text-xsm p-1 rounded-md ring-1 ring-purple-900 z-10 group-hover:block hidden mt-2 transition-transform">
+                            NodeJS
+                          </div>
                         </span>
-                        <span>
-                          <SiPostman className="hover:text-purple-900 hover:border-[1px] hover:border-purple-900 hover:scale-150 hover:rounded-xl " />
+                        <span className="group">
+                          <SiPostman className="hover:text-purple-900  hover:border-purple-900 hover:scale-150 hover:rounded-xl " />
+                          <div className="bg-purple-100 absolute text-purple-900 text-xsm p-1 rounded-md ring-1 ring-purple-900 z-10 group-hover:block hidden mt-2 transition-transform">
+                            Postman
+                          </div>
                         </span>
                       </div>
                       <div className="flex flex-row items-center justify-between w-full lg:w-4/5 mt-3 lg:mt-5 mx-auto  bg-slate-300  rounded-lg">
@@ -190,20 +202,35 @@ const Projects = () => {
                         Technologies
                       </h3>
                       <div className="text-black flex flex-row space-x-3 py-2">
-                        <span>
-                          <SiNextdotjs className="hover:text-purple-900 hover:border-[1px] hover:border-purple-900 hover:scale-150 hover:rounded-xl " />
+                        <span className="group">
+                          <SiNextdotjs className="hover:text-purple-900  hover:border-purple-900 hover:scale-150 hover:rounded-xl " />
+                          <div className="bg-purple-100 absolute text-purple-900 text-xsm p-1 rounded-md ring-1 ring-purple-900 z-10 group-hover:block hidden mt-2 transition-transform">
+                            NextJS
+                          </div>
                         </span>
-                        <span>
-                          <SiMongodb className="hover:text-purple-900 hover:border-[1px] hover:border-purple-900 hover:scale-150 hover:rounded-xl " />
+                        <span className="group">
+                          <SiMongodb className="hover:text-purple-900  hover:border-purple-900 hover:scale-150 hover:rounded-xl " />
+                          <div className="bg-purple-100 absolute text-purple-900 text-xsm p-1 rounded-md ring-1 ring-purple-900 z-10 group-hover:block hidden mt-2 transition-transform">
+                            MongoDB
+                          </div>
                         </span>
-                        <span>
-                          <SiTailwindcss className="hover:text-purple-900 hover:border-[1px] hover:border-purple-900 hover:scale-150 hover:rounded-xl " />
+                        <span className="group">
+                          <SiTailwindcss className="hover:text-purple-900  hover:border-purple-900 hover:scale-150 hover:rounded-xl " />
+                          <div className="bg-purple-100 absolute text-purple-900 text-xsm p-1 rounded-md ring-1 ring-purple-900 z-10 group-hover:block hidden mt-2 transition-transform">
+                            TailwindCSS
+                          </div>
                         </span>
-                        <span>
-                          <SiPostman className="hover:text-purple-900 hover:border-[1px] hover:border-purple-900 hover:scale-150 hover:rounded-xl " />
+                        <span className="group">
+                          <SiPostman className="hover:text-purple-900  hover:border-purple-900 hover:scale-150 hover:rounded-xl " />
+                          <div className="bg-purple-100 absolute text-purple-900 text-xsm p-1 rounded-md ring-1 ring-purple-900 z-10 group-hover:block hidden mt-2 transition-transform">
+                            Postman
+                          </div>
                         </span>
-                        <span>
-                          <SiJsonwebtokens className="hover:text-purple-900 hover:border-[1px] hover:border-purple-900 hover:scale-150 hover:rounded-xl " />
+                        <span className="group">
+                          <SiJsonwebtokens className="hover:text-purple-900  hover:border-purple-900 hover:scale-150 hover:rounded-xl " />
+                          <div className="bg-purple-100 absolute text-purple-900 text-xsm p-1 rounded-md ring-1 ring-purple-900 z-10 group-hover:block hidden mt-2 transition-transform">
+                            JsonWebToken
+                          </div>
                         </span>
                       </div>
                       <div className="flex flex-row items-center justify-between w-full lg:w-4/5 mt-3 lg:mt-5 mx-auto  bg-slate-300  rounded-lg">
@@ -280,14 +307,23 @@ const Projects = () => {
                         Technologies
                       </h3>
                       <div className="text-black flex flex-row space-x-3 py-2">
-                        <span>
-                          <SiNextdotjs className="hover:text-purple-900 hover:border-[1px] hover:border-purple-900 hover:scale-150 hover:rounded-xl " />
+                        <span className="group">
+                          <SiNextdotjs className="hover:text-purple-900  hover:border-purple-900 hover:scale-150 hover:rounded-xl " />
+                          <div className="bg-purple-100 absolute text-purple-900 text-xsm p-1 rounded-md ring-1 ring-purple-900 z-10 group-hover:block hidden mt-2 transition-transform">
+                            NextJS
+                          </div>
                         </span>
-                        <span>
-                          <SiTailwindcss className="hover:text-purple-900 hover:border-[1px] hover:border-purple-900 hover:scale-150 hover:rounded-xl " />
+                        <span className="group">
+                          <SiTailwindcss className="hover:text-purple-900  hover:border-purple-900 hover:scale-150 hover:rounded-xl " />
+                          <div className="bg-purple-100 absolute text-purple-900 text-xsm p-1 rounded-md ring-1 ring-purple-900 z-10 group-hover:block hidden mt-2 transition-transform">
+                            TailwindCSS
+                          </div>
                         </span>
-                        <span>
-                          <SiFramer className="hover:text-purple-900 hover:border-[1px] hover:border-purple-900 hover:scale-150 hover:rounded-xl " />
+                        <span className="group">
+                          <SiFramer className="hover:text-purple-900  hover:border-purple-900 hover:scale-150 hover:rounded-xl " />
+                          <div className="bg-purple-100 absolute text-purple-900 text-xsm p-1 rounded-md ring-1 ring-purple-900 z-10 group-hover:block hidden mt-2 transition-transform">
+                            Framer Motion
+                          </div>
                         </span>
                       </div>
                       <div className="flex flex-row items-center justify-between w-full lg:w-4/5 mt-3 lg:mt-5 mx-auto  bg-slate-300  rounded-lg">
@@ -362,14 +398,23 @@ const Projects = () => {
                         Technologies
                       </h3>
                       <div className="text-black flex flex-row space-x-3 py-2">
-                        <span>
-                          <SiNextdotjs className="hover:text-purple-900 hover:border-[1px] hover:border-purple-900 hover:scale-150 hover:rounded-xl " />
+                        <span className="group">
+                          <SiNextdotjs className="hover:text-purple-900  hover:border-purple-900 hover:scale-150 hover:rounded-xl " />
+                          <div className="bg-purple-100 absolute text-purple-900 text-xsm p-1 rounded-md ring-1 ring-purple-900 z-10 group-hover:block hidden mt-2 transition-transform">
+                            NextJS
+                          </div>
                         </span>
-                        <span>
-                          <SiTailwindcss className="hover:text-purple-900 hover:border-[1px] hover:border-purple-900 hover:scale-150 hover:rounded-xl " />
+                        <span className="group">
+                          <SiTailwindcss className="hover:text-purple-900  hover:border-purple-900 hover:scale-150 hover:rounded-xl " />
+                          <div className="bg-purple-100 absolute text-purple-900 text-xsm p-1 rounded-md ring-1 ring-purple-900 z-10 group-hover:block hidden mt-2 transition-transform">
+                            TailwindCSS
+                          </div>
                         </span>
-                        <span>
-                          <AiOutlineApi className="hover:text-purple-900 hover:border-[1px] hover:border-purple-900 hover:scale-150 hover:rounded-xl " />
+                        <span className="group">
+                          <AiOutlineApi className="hover:text-purple-900  hover:border-purple-900 hover:scale-150 hover:rounded-xl " />
+                          <div className="bg-purple-100 absolute text-purple-900 text-xsm p-1 rounded-md ring-1 ring-purple-900 z-10 group-hover:block hidden mt-2 transition-transform">
+                            OpenWeather API
+                          </div>
                         </span>
                       </div>
                       <div className="flex flex-row items-center justify-between w-full lg:w-4/5 mt-3 lg:mt-5 mx-auto  bg-slate-300  rounded-lg">
@@ -447,11 +492,17 @@ const Projects = () => {
                         Technologies
                       </h3>
                       <div className="text-black flex flex-row space-x-3 py-2">
-                        <span>
-                          <RiReactjsLine className="hover:text-purple-900 hover:border-[1px] hover:border-purple-900 hover:scale-150 hover:rounded-xl " />
+                        <span className="group">
+                          <RiReactjsLine className="hover:text-purple-900  hover:border-purple-900 hover:scale-150 hover:rounded-xl " />
+                          <div className="bg-purple-100 absolute text-purple-900 text-xsm p-1 rounded-md ring-1 ring-purple-900 z-10 group-hover:block hidden mt-2 transition-transform">
+                            React Native
+                          </div>
                         </span>
-                        <span>
-                          <SiExpo className="hover:text-purple-900 hover:border-[1px] hover:border-purple-900 hover:scale-150 hover:rounded-xl " />
+                        <span className="group">
+                          <SiExpo className="hover:text-purple-900  hover:border-purple-900 hover:scale-150 hover:rounded-xl " />
+                          <div className="bg-purple-100 absolute text-purple-900 text-xsm p-1 rounded-md ring-1 ring-purple-900 z-10 group-hover:block hidden mt-2 transition-transform">
+                            Expo
+                          </div>
                         </span>
                       </div>
                       <div className="flex flex-row items-center justify-between w-full lg:w-4/5 mt-3 lg:mt-5 mx-auto  bg-slate-300  rounded-lg ">
@@ -526,15 +577,24 @@ const Projects = () => {
                         Technologies
                       </h3>
                       <div className="text-black flex flex-row space-x-3 py-2">
-                        <span>
-                          <RiReactjsLine className="hover:text-purple-900 hover:border-[1px] hover:border-purple-900 hover:scale-150 hover:rounded-xl " />
+                        <span className="group">
+                          <RiReactjsLine className="hover:text-purple-900  hover:border-purple-900 hover:scale-150 hover:rounded-xl " />
+                          <div className="bg-purple-100 absolute text-purple-900 text-xsm p-1 rounded-md ring-1 ring-purple-900 z-10 group-hover:block hidden mt-2 transition-transform">
+                            React Native
+                          </div>
                         </span>
-                        <span>
-                          <SiExpo className="hover:text-purple-900 hover:border-[1px] hover:border-purple-900 hover:scale-150 hover:rounded-xl " />
+                        <span className="group">
+                          <SiExpo className="hover:text-purple-900  hover:border-purple-900 hover:scale-150 hover:rounded-xl " />
+                          <div className="bg-purple-100 absolute text-purple-900 text-xsm p-1 rounded-md ring-1 ring-purple-900 z-10 group-hover:block hidden mt-2 transition-transform">
+                            Expo
+                          </div>
                         </span>
-                        
-                        <span>
-                          <SiTailwindcss className="hover:text-purple-900 hover:border-[1px] hover:border-purple-900 hover:scale-150 hover:rounded-xl " />
+
+                        <span className="group">
+                          <SiTailwindcss className="hover:text-purple-900  hover:border-purple-900 hover:scale-150 hover:rounded-xl " />
+                          <div className="bg-purple-100 absolute text-purple-900 text-xsm p-1 rounded-md ring-1 ring-purple-900 z-10 group-hover:block hidden mt-2 transition-transform">
+                            TailwindCSS
+                          </div>
                         </span>
                       </div>
                       <div className="flex flex-row items-center justify-between w-full lg:w-4/5 mt-3 lg:mt-5 mx-auto  bg-slate-300  rounded-lg">
@@ -612,23 +672,41 @@ const Projects = () => {
                         Technologies
                       </h3>
                       <div className="text-black flex flex-row space-x-3 py-2">
-                        <span>
-                          <SiReact className="hover:text-purple-900 hover:border-[1px] hover:border-purple-900 hover:scale-150 hover:rounded-xl " />
+                        <span className="group">
+                          <SiReact className="hover:text-purple-900  hover:border-purple-900 hover:scale-150 hover:rounded-xl " />
+                          <div className="bg-purple-100 absolute text-purple-900 text-xsm p-1 rounded-md ring-1 ring-purple-900 z-10 group-hover:block hidden mt-2 transition-transform">
+                            ReactJS
+                          </div>
                         </span>
-                        <span>
-                          <SiMongodb className="hover:text-purple-900 hover:border-[1px] hover:border-purple-900 hover:scale-150 hover:rounded-xl " />
+                        <span className="group">
+                          <SiMongodb className="hover:text-purple-900  hover:border-purple-900 hover:scale-150 hover:rounded-xl " />
+                          <div className="bg-purple-100 absolute text-purple-900 text-xsm p-1 rounded-md ring-1 ring-purple-900 z-10 group-hover:block hidden mt-2 transition-transform">
+                            MongoDB
+                          </div>
                         </span>
-                        <span>
-                          <FaNodeJs className="hover:text-purple-900 hover:border-[1px] hover:border-purple-900 hover:scale-150 hover:rounded-xl " />
+                        <span className="group">
+                          <FaNodeJs className="hover:text-purple-900  hover:border-purple-900 hover:scale-150 hover:rounded-xl " />
+                          <div className="bg-purple-100 absolute text-purple-900 text-xsm p-1 rounded-md ring-1 ring-purple-900 z-10 group-hover:block hidden mt-2 transition-transform">
+                            NodeJS
+                          </div>
                         </span>
-                        <span>
-                          <SiPostman className="hover:text-purple-900 hover:border-[1px] hover:border-purple-900 hover:scale-150 hover:rounded-xl " />
+                        <span className="group">
+                          <SiPostman className="hover:text-purple-900  hover:border-purple-900 hover:scale-150 hover:rounded-xl " />
+                          <div className="bg-purple-100 absolute text-purple-900 text-xsm p-1 rounded-md ring-1 ring-purple-900 z-10 group-hover:block hidden mt-2 transition-transform">
+                            Postman
+                          </div>
                         </span>
-                        <span>
-                          <SiFramer className="hover:text-purple-900 hover:border-[1px] hover:border-purple-900 hover:scale-150 hover:rounded-xl " />
+                        <span className="group">
+                          <SiFramer className="hover:text-purple-900  hover:border-purple-900 hover:scale-150 hover:rounded-xl " />
+                          <div className="bg-purple-100 absolute text-purple-900 text-xsm p-1 rounded-md ring-1 ring-purple-900 z-10 group-hover:block hidden mt-2 transition-transform">
+                            Framer Motion
+                          </div>
                         </span>
-                        <span>
-                          <SiBootstrap className="hover:text-purple-900 hover:border-[1px] hover:border-purple-900 hover:scale-150 hover:rounded-xl " />
+                        <span className="group">
+                          <SiBootstrap className="hover:text-purple-900  hover:border-purple-900 hover:scale-150 hover:rounded-xl " />
+                          <div className="bg-purple-100 absolute text-purple-900 text-xsm p-1 rounded-md ring-1 ring-purple-900 z-10 group-hover:block hidden mt-2 transition-transform">
+                            Bootstrap5
+                          </div>
                         </span>
                       </div>
                       <div className="flex flex-row items-center justify-between w-full lg:w-4/5 mt-3 lg:mt-5 mx-auto  bg-slate-300  rounded-lg ">
@@ -703,17 +781,29 @@ const Projects = () => {
                         Technologies
                       </h3>
                       <div className="text-black flex flex-row space-x-3 py-2">
-                        <span>
-                          <SiNextdotjs className="hover:text-purple-900 hover:border-[1px] hover:border-purple-900 hover:scale-150 hover:rounded-xl " />
+                        <span className="group">
+                          <SiNextdotjs className="hover:text-purple-900  hover:border-purple-900 hover:scale-150 hover:rounded-xl " />
+                          <div className="bg-purple-100 absolute text-purple-900 text-xsm p-1 rounded-md ring-1 ring-purple-900 z-10 group-hover:block hidden mt-2 transition-transform">
+                            NextJS
+                          </div>
                         </span>
-                        <span>
-                          <SiMongodb className="hover:text-purple-900 hover:border-[1px] hover:border-purple-900 hover:scale-150 hover:rounded-xl " />
+                        <span className="group">
+                          <SiMongodb className="hover:text-purple-900  hover:border-purple-900 hover:scale-150 hover:rounded-xl " />
+                          <div className="bg-purple-100 absolute text-purple-900 text-xsm p-1 rounded-md ring-1 ring-purple-900 z-10 group-hover:block hidden mt-2 transition-transform">
+                            MongoDB
+                          </div>
                         </span>
-                        <span>
-                          <SiPostman className="hover:text-purple-900 hover:border-[1px] hover:border-purple-900 hover:scale-150 hover:rounded-xl " />
+                        <span className="group">
+                          <SiPostman className="hover:text-purple-900  hover:border-purple-900 hover:scale-150 hover:rounded-xl " />
+                          <div className="bg-purple-100 absolute text-purple-900 text-xsm p-1 rounded-md ring-1 ring-purple-900 z-10 group-hover:block hidden mt-2 transition-transform">
+                            Postman
+                          </div>
                         </span>
-                        <span>
-                          <SiTailwindcss className="hover:text-purple-900 hover:border-[1px] hover:border-purple-900 hover:scale-150 hover:rounded-xl " />
+                        <span className="group">
+                          <SiTailwindcss className="hover:text-purple-900  hover:border-purple-900 hover:scale-150 hover:rounded-xl " />
+                          <div className="bg-purple-100 absolute text-purple-900 text-xsm p-1 rounded-md ring-1 ring-purple-900 z-10 group-hover:block hidden mt-2 transition-transform">
+                            TailwindCSS
+                          </div>
                         </span>
                       </div>
                       <div className="flex flex-row items-center justify-between w-full lg:w-4/5 mt-3 lg:mt-5 mx-auto  bg-slate-300  rounded-lg">
@@ -791,14 +881,23 @@ const Projects = () => {
                         Technologies
                       </h3>
                       <div className="text-black flex flex-row space-x-3 py-2">
-                        <span>
-                          <SiReact className="hover:text-purple-900 hover:border-[1px] hover:border-purple-900 hover:scale-150 hover:rounded-xl " />
+                        <span className="group">
+                          <SiReact className="hover:text-purple-900  hover:border-purple-900 hover:scale-150 hover:rounded-xl " />
+                          <div className="bg-purple-100 absolute text-purple-900 text-xsm p-1 rounded-md ring-1 ring-purple-900 z-10 group-hover:block hidden mt-2 transition-transform">
+                            ReactJS
+                          </div>
                         </span>
-                        <span>
-                          <SiBootstrap className="hover:text-purple-900 hover:border-[1px] hover:border-purple-900 hover:scale-150 hover:rounded-xl " />
+                        <span className="group">
+                          <SiBootstrap className="hover:text-purple-900  hover:border-purple-900 hover:scale-150 hover:rounded-xl " />
+                          <div className="bg-purple-100 absolute text-purple-900 text-xsm p-1 rounded-md ring-1 ring-purple-900 z-10 group-hover:block hidden mt-2 transition-transform">
+                            Bootstrap5
+                          </div>
                         </span>
-                        <span>
-                          <SiRedux className="hover:text-purple-900 hover:border-[1px] hover:border-purple-900 hover:scale-150 hover:rounded-xl " />
+                        <span className="group">
+                          <SiRedux className="hover:text-purple-900  hover:border-purple-900 hover:scale-150 hover:rounded-xl " />
+                          <div className="bg-purple-100 absolute text-purple-900 text-xsm p-1 rounded-md ring-1 ring-purple-900 z-10 group-hover:block hidden mt-2 transition-transform">
+                            Redux
+                          </div>
                         </span>
                       </div>
                       <div className="flex flex-row items-center justify-between w-full lg:w-4/5 mt-3 lg:mt-5 mx-auto  bg-slate-300  rounded-lg">
@@ -873,17 +972,29 @@ const Projects = () => {
                         Technologies
                       </h3>
                       <div className="text-black flex flex-row space-x-3 py-2">
-                        <span>
-                          <FaHtml5 className="hover:text-purple-900 hover:border-[1px] hover:border-purple-900 hover:scale-150 hover:rounded-xl " />
+                        <span className="group">
+                          <FaHtml5 className="hover:text-purple-900  hover:border-purple-900 hover:scale-150 hover:rounded-xl " />
+                          <div className="bg-purple-100 absolute text-purple-900 text-xsm p-1 rounded-md ring-1 ring-purple-900 z-10 group-hover:block hidden mt-2 transition-transform">
+                            HTML5
+                          </div>
                         </span>
-                        <span>
-                          <FaCss3 className="hover:text-purple-900 hover:border-[1px] hover:border-purple-900 hover:scale-150 hover:rounded-xl " />
+                        <span className="group">
+                          <FaCss3 className="hover:text-purple-900  hover:border-purple-900 hover:scale-150 hover:rounded-xl " />
+                          <div className="bg-purple-100 absolute text-purple-900 text-xsm p-1 rounded-md ring-1 ring-purple-900 z-10 group-hover:block hidden mt-2 transition-transform">
+                            CSS3
+                          </div>
                         </span>
-                        <span>
-                          <SiJavascript className="hover:text-purple-900 hover:border-[1px] hover:border-purple-900 hover:scale-150 hover:rounded-xl " />
+                        <span className="group">
+                          <SiJavascript className="hover:text-purple-900  hover:border-purple-900 hover:scale-150 hover:rounded-xl " />
+                          <div className="bg-purple-100 absolute text-purple-900 text-xsm p-1 rounded-md ring-1 ring-purple-900 z-10 group-hover:block hidden mt-2 transition-transform">
+                            Javascript
+                          </div>
                         </span>
-                        <span>
-                          <FaSpotify className="hover:text-purple-900 hover:border-[1px] hover:border-purple-900 hover:scale-150 hover:rounded-xl " />
+                        <span className="group">
+                          <FaSpotify className="hover:text-purple-900  hover:border-purple-900 hover:scale-150 hover:rounded-xl " />
+                          <div className="bg-purple-100 absolute text-purple-900 text-xsm p-1 rounded-md ring-1 ring-purple-900 z-10 group-hover:block hidden mt-2 transition-transform">
+                            Spotify
+                          </div>
                         </span>
                       </div>
                       <div className="flex flex-row items-center justify-between w-full lg:w-4/5 mt-3 lg:mt-5 mx-auto  bg-slate-300  rounded-lg">
@@ -958,14 +1069,23 @@ const Projects = () => {
                         Technologies
                       </h3>
                       <div className="text-black flex flex-row space-x-3 py-2">
-                        <span>
-                          <SiReact className="hover:text-purple-900 hover:border-[1px] hover:border-purple-900 hover:scale-150 hover:rounded-xl " />
+                        <span className="group">
+                          <SiReact className="hover:text-purple-900  hover:border-purple-900 hover:scale-150 hover:rounded-xl " />
+                          <div className="bg-purple-100 absolute text-purple-900 text-xsm p-1 rounded-md ring-1 ring-purple-900 z-10 group-hover:block hidden mt-2 transition-transform">
+                            ReactJS
+                          </div>
                         </span>
-                        <span>
-                          <SiTailwindcss className="hover:text-purple-900 hover:border-[1px] hover:border-purple-900 hover:scale-150 hover:rounded-xl " />
+                        <span className="group">
+                          <SiTailwindcss className="hover:text-purple-900  hover:border-purple-900 hover:scale-150 hover:rounded-xl " />
+                          <div className="bg-purple-100 absolute text-purple-900 text-xsm p-1 rounded-md ring-1 ring-purple-900 z-10 group-hover:block hidden mt-2 transition-transform">
+                            TailwindCSS
+                          </div>
                         </span>
-                        <span>
-                          <AiOutlineApi className="hover:text-purple-900 hover:border-[1px] hover:border-purple-900 hover:scale-150 hover:rounded-xl " />
+                        <span className="group">
+                          <AiOutlineApi className="hover:text-purple-900  hover:border-purple-900 hover:scale-150 hover:rounded-xl " />
+                          <div className="bg-purple-100 absolute text-purple-900 text-xsm p-1 rounded-md ring-1 ring-purple-900 z-10 group-hover:block hidden mt-2 transition-transform">
+                            API
+                          </div>
                         </span>
                       </div>
                       <div className="flex flex-row items-center justify-between w-full lg:w-4/5 mt-3 lg:mt-5 mx-auto  bg-slate-300  rounded-lg">
@@ -1040,26 +1160,47 @@ const Projects = () => {
                         Technologies
                       </h3>
                       <div className="text-black flex flex-row space-x-3 py-2">
-                        <span>
-                          <SiReact className="hover:text-purple-900 hover:border-[1px] hover:border-purple-900 hover:scale-150 hover:rounded-xl " />
+                        <span className="group">
+                          <SiReact className="hover:text-purple-900  hover:border-purple-900 hover:scale-150 hover:rounded-xl " />
+                          <div className="bg-purple-100 absolute text-purple-900 text-xsm p-1 rounded-md ring-1 ring-purple-900 z-10 group-hover:block hidden mt-2 transition-transform">
+                            ReactJS
+                          </div>
                         </span>
-                        <span>
-                          <SiMongodb className="hover:text-purple-900 hover:border-[1px] hover:border-purple-900 hover:scale-150 hover:rounded-xl " />
+                        <span className="group">
+                          <SiMongodb className="hover:text-purple-900  hover:border-purple-900 hover:scale-150 hover:rounded-xl " />
+                          <div className="bg-purple-100 absolute text-purple-900 text-xsm p-1 rounded-md ring-1 ring-purple-900 z-10 group-hover:block hidden mt-2 transition-transform">
+                            MongoDB
+                          </div>
                         </span>
-                        <span>
-                          <FaNodeJs className="hover:text-purple-900 hover:border-[1px] hover:border-purple-900 hover:scale-150 hover:rounded-xl " />
+                        <span className="group">
+                          <FaNodeJs className="hover:text-purple-900  hover:border-purple-900 hover:scale-150 hover:rounded-xl " />
+                          <div className="bg-purple-100 absolute text-purple-900 text-xsm p-1 rounded-md ring-1 ring-purple-900 z-10 group-hover:block hidden mt-2 transition-transform">
+                            NodeJS
+                          </div>
                         </span>
-                        <span>
-                          <SiBootstrap className="hover:text-purple-900 hover:border-[1px] hover:border-purple-900 hover:scale-150 hover:rounded-xl " />
+                        <span className="group">
+                          <SiBootstrap className="hover:text-purple-900  hover:border-purple-900 hover:scale-150 hover:rounded-xl " />
+                          <div className="bg-purple-100 absolute text-purple-900 text-xsm p-1 rounded-md ring-1 ring-purple-900 z-10 group-hover:block hidden mt-2 transition-transform">
+                            Bootstrap5
+                          </div>
                         </span>
-                        <span>
-                          <SiLichess className="hover:text-purple-900 hover:border-[1px] hover:border-purple-900 hover:scale-150 hover:rounded-xl " />
+                        <span className="group">
+                          <SiLichess className="hover:text-purple-900  hover:border-purple-900 hover:scale-150 hover:rounded-xl " />
+                          <div className="bg-purple-100 absolute text-purple-900 text-xsm p-1 rounded-md ring-1 ring-purple-900 z-10 group-hover:block hidden mt-2 transition-transform">
+                            LiChess
+                          </div>
                         </span>
-                        <span>
-                          <SiPostman className="hover:text-purple-900 hover:border-[1px] hover:border-purple-900 hover:scale-150 hover:rounded-xl " />
+                        <span className="group">
+                          <SiPostman className="hover:text-purple-900  hover:border-purple-900 hover:scale-150 hover:rounded-xl " />
+                          <div className="bg-purple-100 absolute text-purple-900 text-xsm p-1 rounded-md ring-1 ring-purple-900 z-10 group-hover:block hidden mt-2 transition-transform">
+                            Postman
+                          </div>
                         </span>
-                        <span>
-                          <AiOutlineApi className="hover:text-purple-900 hover:border-[1px] hover:border-purple-900 hover:scale-150 hover:rounded-xl " />
+                        <span className="group">
+                          <AiOutlineApi className="hover:text-purple-900  hover:border-purple-900 hover:scale-150 hover:rounded-xl " />
+                          <div className="bg-purple-100 absolute text-purple-900 text-xsm p-1 rounded-md ring-1 ring-purple-900 z-10 group-hover:block hidden mt-2 transition-transform">
+                            API
+                          </div>
                         </span>
                       </div>
                       <div className="flex flex-row items-center justify-between w-full lg:w-4/5 mt-3 lg:mt-5 mx-auto  bg-slate-300  rounded-lg">
