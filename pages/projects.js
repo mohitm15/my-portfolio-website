@@ -45,6 +45,7 @@ import { HiCode } from "react-icons/hi";
 import { RiReactjsLine } from "react-icons/ri";
 import { AiOutlineApi } from "react-icons/ai";
 import { motion } from "framer-motion";
+import Tooltip from "./components/tooltip";
 
 const Projects = () => {
   useEffect(() => {
@@ -107,28 +108,20 @@ const Projects = () => {
                       <div className="text-black flex flex-row space-x-3 py-2 ">
                         <span className="group">
                           <SiReact className="hover:text-purple-900  hover:border-purple-900 hover:scale-150 hover:rounded-xl" />
-                          <div className="bg-purple-100 absolute text-purple-900 text-xsm p-1 rounded-md ring-1 ring-purple-900 z-10 group-hover:block hidden mt-2 transition-transform">
-                            ReactJS
-                          </div>
-                        </span>
+                          <Tooltip techname="ReactJS" />
+                          </span>
                         <span className="group">
                           <SiMongodb className="hover:text-purple-900  hover:border-purple-900 hover:scale-150  hover:rounded-xl" />
-                          <div className="bg-purple-100 absolute text-purple-900 text-xsm p-1 rounded-md ring-1 ring-purple-900 z-10 group-hover:block hidden mt-2 transition-transform">
-                            MongoDB
-                          </div>
-                        </span>
+                          <Tooltip techname="MongoDB" />
+                          </span>
                         <span className="group">
                           <FaNodeJs className="hover:text-purple-900  hover:border-purple-900 hover:scale-150 hover:rounded-xl " />
-                          <div className="bg-purple-100 absolute text-purple-900 text-xsm p-1 rounded-md ring-1 ring-purple-900 z-10 group-hover:block hidden mt-2 transition-transform">
-                            NodeJS
-                          </div>
-                        </span>
+                          <Tooltip techname="NodeJS" />
+                          </span>
                         <span className="group">
                           <SiPostman className="hover:text-purple-900  hover:border-purple-900 hover:scale-150 hover:rounded-xl " />
-                          <div className="bg-purple-100 absolute text-purple-900 text-xsm p-1 rounded-md ring-1 ring-purple-900 z-10 group-hover:block hidden mt-2 transition-transform">
-                            Postman
-                          </div>
-                        </span>
+                          <Tooltip techname="Postman" />
+                          </span>
                       </div>
                       <div className="flex flex-row items-center justify-between w-full lg:w-4/5 mt-3 lg:mt-5 mx-auto  bg-slate-300  rounded-lg">
                         <button
@@ -204,34 +197,24 @@ const Projects = () => {
                       <div className="text-black flex flex-row space-x-3 py-2">
                         <span className="group">
                           <SiNextdotjs className="hover:text-purple-900  hover:border-purple-900 hover:scale-150 hover:rounded-xl " />
-                          <div className="bg-purple-100 absolute text-purple-900 text-xsm p-1 rounded-md ring-1 ring-purple-900 z-10 group-hover:block hidden mt-2 transition-transform">
-                            NextJS
-                          </div>
+                          <Tooltip techname="NextJS" />
                         </span>
                         <span className="group">
                           <SiMongodb className="hover:text-purple-900  hover:border-purple-900 hover:scale-150 hover:rounded-xl " />
-                          <div className="bg-purple-100 absolute text-purple-900 text-xsm p-1 rounded-md ring-1 ring-purple-900 z-10 group-hover:block hidden mt-2 transition-transform">
-                            MongoDB
-                          </div>
+                          <Tooltip techname="MongoDB" />
                         </span>
                         <span className="group">
                           <SiTailwindcss className="hover:text-purple-900  hover:border-purple-900 hover:scale-150 hover:rounded-xl " />
-                          <div className="bg-purple-100 absolute text-purple-900 text-xsm p-1 rounded-md ring-1 ring-purple-900 z-10 group-hover:block hidden mt-2 transition-transform">
-                            TailwindCSS
-                          </div>
+                          <Tooltip techname="TailwindCSS" />
                         </span>
                         <span className="group">
                           <SiPostman className="hover:text-purple-900  hover:border-purple-900 hover:scale-150 hover:rounded-xl " />
-                          <div className="bg-purple-100 absolute text-purple-900 text-xsm p-1 rounded-md ring-1 ring-purple-900 z-10 group-hover:block hidden mt-2 transition-transform">
-                            Postman
-                          </div>
-                        </span>
+                          <Tooltip techname="Postman" />
+                          </span>
                         <span className="group">
                           <SiJsonwebtokens className="hover:text-purple-900  hover:border-purple-900 hover:scale-150 hover:rounded-xl " />
-                          <div className="bg-purple-100 absolute text-purple-900 text-xsm p-1 rounded-md ring-1 ring-purple-900 z-10 group-hover:block hidden mt-2 transition-transform">
-                            JsonWebToken
-                          </div>
-                        </span>
+                          <Tooltip techname="JsonWebToken" />
+                          </span>
                       </div>
                       <div className="flex flex-row items-center justify-between w-full lg:w-4/5 mt-3 lg:mt-5 mx-auto  bg-slate-300  rounded-lg">
                         <button
@@ -309,22 +292,16 @@ const Projects = () => {
                       <div className="text-black flex flex-row space-x-3 py-2">
                         <span className="group">
                           <SiNextdotjs className="hover:text-purple-900  hover:border-purple-900 hover:scale-150 hover:rounded-xl " />
-                          <div className="bg-purple-100 absolute text-purple-900 text-xsm p-1 rounded-md ring-1 ring-purple-900 z-10 group-hover:block hidden mt-2 transition-transform">
-                            NextJS
-                          </div>
-                        </span>
+                          <Tooltip techname="NextJS" />
+                          </span>
                         <span className="group">
                           <SiTailwindcss className="hover:text-purple-900  hover:border-purple-900 hover:scale-150 hover:rounded-xl " />
-                          <div className="bg-purple-100 absolute text-purple-900 text-xsm p-1 rounded-md ring-1 ring-purple-900 z-10 group-hover:block hidden mt-2 transition-transform">
-                            TailwindCSS
-                          </div>
-                        </span>
+                          <Tooltip techname="TailwindCSS" />
+                          </span>
                         <span className="group">
                           <SiFramer className="hover:text-purple-900  hover:border-purple-900 hover:scale-150 hover:rounded-xl " />
-                          <div className="bg-purple-100 absolute text-purple-900 text-xsm p-1 rounded-md ring-1 ring-purple-900 z-10 group-hover:block hidden mt-2 transition-transform">
-                            Framer Motion
-                          </div>
-                        </span>
+                          <Tooltip techname="Framer Motion" />
+                          </span>
                       </div>
                       <div className="flex flex-row items-center justify-between w-full lg:w-4/5 mt-3 lg:mt-5 mx-auto  bg-slate-300  rounded-lg">
                         <button
@@ -400,22 +377,16 @@ const Projects = () => {
                       <div className="text-black flex flex-row space-x-3 py-2">
                         <span className="group">
                           <SiNextdotjs className="hover:text-purple-900  hover:border-purple-900 hover:scale-150 hover:rounded-xl " />
-                          <div className="bg-purple-100 absolute text-purple-900 text-xsm p-1 rounded-md ring-1 ring-purple-900 z-10 group-hover:block hidden mt-2 transition-transform">
-                            NextJS
-                          </div>
-                        </span>
+                          <Tooltip techname="NextJS" />
+                          </span>
                         <span className="group">
                           <SiTailwindcss className="hover:text-purple-900  hover:border-purple-900 hover:scale-150 hover:rounded-xl " />
-                          <div className="bg-purple-100 absolute text-purple-900 text-xsm p-1 rounded-md ring-1 ring-purple-900 z-10 group-hover:block hidden mt-2 transition-transform">
-                            TailwindCSS
-                          </div>
-                        </span>
+                          <Tooltip techname="TailwindCSS" />
+                          </span>
                         <span className="group">
                           <AiOutlineApi className="hover:text-purple-900  hover:border-purple-900 hover:scale-150 hover:rounded-xl " />
-                          <div className="bg-purple-100 absolute text-purple-900 text-xsm p-1 rounded-md ring-1 ring-purple-900 z-10 group-hover:block hidden mt-2 transition-transform">
-                            OpenWeather API
-                          </div>
-                        </span>
+                          <Tooltip techname="OpenWeather API" />
+                          </span>
                       </div>
                       <div className="flex flex-row items-center justify-between w-full lg:w-4/5 mt-3 lg:mt-5 mx-auto  bg-slate-300  rounded-lg">
                         <button
@@ -494,16 +465,12 @@ const Projects = () => {
                       <div className="text-black flex flex-row space-x-3 py-2">
                         <span className="group">
                           <RiReactjsLine className="hover:text-purple-900  hover:border-purple-900 hover:scale-150 hover:rounded-xl " />
-                          <div className="bg-purple-100 absolute text-purple-900 text-xsm p-1 rounded-md ring-1 ring-purple-900 z-10 group-hover:block hidden mt-2 transition-transform">
-                            React Native
-                          </div>
-                        </span>
+                          <Tooltip techname="React Native" />
+                          </span>
                         <span className="group">
                           <SiExpo className="hover:text-purple-900  hover:border-purple-900 hover:scale-150 hover:rounded-xl " />
-                          <div className="bg-purple-100 absolute text-purple-900 text-xsm p-1 rounded-md ring-1 ring-purple-900 z-10 group-hover:block hidden mt-2 transition-transform">
-                            Expo
-                          </div>
-                        </span>
+                          <Tooltip techname="Expo" />
+                          </span>
                       </div>
                       <div className="flex flex-row items-center justify-between w-full lg:w-4/5 mt-3 lg:mt-5 mx-auto  bg-slate-300  rounded-lg ">
                         <button
@@ -579,23 +546,17 @@ const Projects = () => {
                       <div className="text-black flex flex-row space-x-3 py-2">
                         <span className="group">
                           <RiReactjsLine className="hover:text-purple-900  hover:border-purple-900 hover:scale-150 hover:rounded-xl " />
-                          <div className="bg-purple-100 absolute text-purple-900 text-xsm p-1 rounded-md ring-1 ring-purple-900 z-10 group-hover:block hidden mt-2 transition-transform">
-                            React Native
-                          </div>
-                        </span>
+                          <Tooltip techname="React Native" />
+                          </span>
                         <span className="group">
                           <SiExpo className="hover:text-purple-900  hover:border-purple-900 hover:scale-150 hover:rounded-xl " />
-                          <div className="bg-purple-100 absolute text-purple-900 text-xsm p-1 rounded-md ring-1 ring-purple-900 z-10 group-hover:block hidden mt-2 transition-transform">
-                            Expo
-                          </div>
-                        </span>
+                          <Tooltip techname="Expo" />
+                          </span>
 
                         <span className="group">
                           <SiTailwindcss className="hover:text-purple-900  hover:border-purple-900 hover:scale-150 hover:rounded-xl " />
-                          <div className="bg-purple-100 absolute text-purple-900 text-xsm p-1 rounded-md ring-1 ring-purple-900 z-10 group-hover:block hidden mt-2 transition-transform">
-                            TailwindCSS
-                          </div>
-                        </span>
+                          <Tooltip techname="TailwindCSS" />
+                          </span>
                       </div>
                       <div className="flex flex-row items-center justify-between w-full lg:w-4/5 mt-3 lg:mt-5 mx-auto  bg-slate-300  rounded-lg">
                         <button
@@ -674,40 +635,28 @@ const Projects = () => {
                       <div className="text-black flex flex-row space-x-3 py-2">
                         <span className="group">
                           <SiReact className="hover:text-purple-900  hover:border-purple-900 hover:scale-150 hover:rounded-xl " />
-                          <div className="bg-purple-100 absolute text-purple-900 text-xsm p-1 rounded-md ring-1 ring-purple-900 z-10 group-hover:block hidden mt-2 transition-transform">
-                            ReactJS
-                          </div>
-                        </span>
+                          <Tooltip techname="ReactJS" />
+                          </span>
                         <span className="group">
                           <SiMongodb className="hover:text-purple-900  hover:border-purple-900 hover:scale-150 hover:rounded-xl " />
-                          <div className="bg-purple-100 absolute text-purple-900 text-xsm p-1 rounded-md ring-1 ring-purple-900 z-10 group-hover:block hidden mt-2 transition-transform">
-                            MongoDB
-                          </div>
-                        </span>
+                          <Tooltip techname="MongoDB" />
+                          </span>
                         <span className="group">
                           <FaNodeJs className="hover:text-purple-900  hover:border-purple-900 hover:scale-150 hover:rounded-xl " />
-                          <div className="bg-purple-100 absolute text-purple-900 text-xsm p-1 rounded-md ring-1 ring-purple-900 z-10 group-hover:block hidden mt-2 transition-transform">
-                            NodeJS
-                          </div>
-                        </span>
+                          <Tooltip techname="NodeJS" />
+                          </span>
                         <span className="group">
                           <SiPostman className="hover:text-purple-900  hover:border-purple-900 hover:scale-150 hover:rounded-xl " />
-                          <div className="bg-purple-100 absolute text-purple-900 text-xsm p-1 rounded-md ring-1 ring-purple-900 z-10 group-hover:block hidden mt-2 transition-transform">
-                            Postman
-                          </div>
-                        </span>
+                          <Tooltip techname="Postman" />
+                          </span>
                         <span className="group">
                           <SiFramer className="hover:text-purple-900  hover:border-purple-900 hover:scale-150 hover:rounded-xl " />
-                          <div className="bg-purple-100 absolute text-purple-900 text-xsm p-1 rounded-md ring-1 ring-purple-900 z-10 group-hover:block hidden mt-2 transition-transform">
-                            Framer Motion
-                          </div>
-                        </span>
+                          <Tooltip techname="Framer Motion" />
+                          </span>
                         <span className="group">
                           <SiBootstrap className="hover:text-purple-900  hover:border-purple-900 hover:scale-150 hover:rounded-xl " />
-                          <div className="bg-purple-100 absolute text-purple-900 text-xsm p-1 rounded-md ring-1 ring-purple-900 z-10 group-hover:block hidden mt-2 transition-transform">
-                            Bootstrap5
-                          </div>
-                        </span>
+                          <Tooltip techname="Bootstrap5" />
+                          </span>
                       </div>
                       <div className="flex flex-row items-center justify-between w-full lg:w-4/5 mt-3 lg:mt-5 mx-auto  bg-slate-300  rounded-lg ">
                         <button
@@ -783,28 +732,20 @@ const Projects = () => {
                       <div className="text-black flex flex-row space-x-3 py-2">
                         <span className="group">
                           <SiNextdotjs className="hover:text-purple-900  hover:border-purple-900 hover:scale-150 hover:rounded-xl " />
-                          <div className="bg-purple-100 absolute text-purple-900 text-xsm p-1 rounded-md ring-1 ring-purple-900 z-10 group-hover:block hidden mt-2 transition-transform">
-                            NextJS
-                          </div>
-                        </span>
+                          <Tooltip techname="NextJS" />
+                          </span>
                         <span className="group">
                           <SiMongodb className="hover:text-purple-900  hover:border-purple-900 hover:scale-150 hover:rounded-xl " />
-                          <div className="bg-purple-100 absolute text-purple-900 text-xsm p-1 rounded-md ring-1 ring-purple-900 z-10 group-hover:block hidden mt-2 transition-transform">
-                            MongoDB
-                          </div>
-                        </span>
+                          <Tooltip techname="MongoDB" />
+                          </span>
                         <span className="group">
                           <SiPostman className="hover:text-purple-900  hover:border-purple-900 hover:scale-150 hover:rounded-xl " />
-                          <div className="bg-purple-100 absolute text-purple-900 text-xsm p-1 rounded-md ring-1 ring-purple-900 z-10 group-hover:block hidden mt-2 transition-transform">
-                            Postman
-                          </div>
-                        </span>
+                          <Tooltip techname="Postman" />
+                          </span>
                         <span className="group">
                           <SiTailwindcss className="hover:text-purple-900  hover:border-purple-900 hover:scale-150 hover:rounded-xl " />
-                          <div className="bg-purple-100 absolute text-purple-900 text-xsm p-1 rounded-md ring-1 ring-purple-900 z-10 group-hover:block hidden mt-2 transition-transform">
-                            TailwindCSS
-                          </div>
-                        </span>
+                          <Tooltip techname="TailwindCSS" />
+                          </span>
                       </div>
                       <div className="flex flex-row items-center justify-between w-full lg:w-4/5 mt-3 lg:mt-5 mx-auto  bg-slate-300  rounded-lg">
                         <button
@@ -883,22 +824,16 @@ const Projects = () => {
                       <div className="text-black flex flex-row space-x-3 py-2">
                         <span className="group">
                           <SiReact className="hover:text-purple-900  hover:border-purple-900 hover:scale-150 hover:rounded-xl " />
-                          <div className="bg-purple-100 absolute text-purple-900 text-xsm p-1 rounded-md ring-1 ring-purple-900 z-10 group-hover:block hidden mt-2 transition-transform">
-                            ReactJS
-                          </div>
-                        </span>
+                          <Tooltip techname="ReactJS" />
+                          </span>
                         <span className="group">
                           <SiBootstrap className="hover:text-purple-900  hover:border-purple-900 hover:scale-150 hover:rounded-xl " />
-                          <div className="bg-purple-100 absolute text-purple-900 text-xsm p-1 rounded-md ring-1 ring-purple-900 z-10 group-hover:block hidden mt-2 transition-transform">
-                            Bootstrap5
-                          </div>
-                        </span>
+                          <Tooltip techname="Bootstrap5" />
+                          </span>
                         <span className="group">
                           <SiRedux className="hover:text-purple-900  hover:border-purple-900 hover:scale-150 hover:rounded-xl " />
-                          <div className="bg-purple-100 absolute text-purple-900 text-xsm p-1 rounded-md ring-1 ring-purple-900 z-10 group-hover:block hidden mt-2 transition-transform">
-                            Redux
-                          </div>
-                        </span>
+                          <Tooltip techname="Redux" />
+                          </span>
                       </div>
                       <div className="flex flex-row items-center justify-between w-full lg:w-4/5 mt-3 lg:mt-5 mx-auto  bg-slate-300  rounded-lg">
                         <button
@@ -974,28 +909,20 @@ const Projects = () => {
                       <div className="text-black flex flex-row space-x-3 py-2">
                         <span className="group">
                           <FaHtml5 className="hover:text-purple-900  hover:border-purple-900 hover:scale-150 hover:rounded-xl " />
-                          <div className="bg-purple-100 absolute text-purple-900 text-xsm p-1 rounded-md ring-1 ring-purple-900 z-10 group-hover:block hidden mt-2 transition-transform">
-                            HTML5
-                          </div>
-                        </span>
+                          <Tooltip techname="HTML5" />
+                          </span>
                         <span className="group">
                           <FaCss3 className="hover:text-purple-900  hover:border-purple-900 hover:scale-150 hover:rounded-xl " />
-                          <div className="bg-purple-100 absolute text-purple-900 text-xsm p-1 rounded-md ring-1 ring-purple-900 z-10 group-hover:block hidden mt-2 transition-transform">
-                            CSS3
-                          </div>
-                        </span>
+                          <Tooltip techname="CSS3" />
+                          </span>
                         <span className="group">
                           <SiJavascript className="hover:text-purple-900  hover:border-purple-900 hover:scale-150 hover:rounded-xl " />
-                          <div className="bg-purple-100 absolute text-purple-900 text-xsm p-1 rounded-md ring-1 ring-purple-900 z-10 group-hover:block hidden mt-2 transition-transform">
-                            Javascript
-                          </div>
-                        </span>
+                          <Tooltip techname="Javascript" />
+                          </span>
                         <span className="group">
                           <FaSpotify className="hover:text-purple-900  hover:border-purple-900 hover:scale-150 hover:rounded-xl " />
-                          <div className="bg-purple-100 absolute text-purple-900 text-xsm p-1 rounded-md ring-1 ring-purple-900 z-10 group-hover:block hidden mt-2 transition-transform">
-                            Spotify
-                          </div>
-                        </span>
+                          <Tooltip techname="Spotify" />
+                          </span>
                       </div>
                       <div className="flex flex-row items-center justify-between w-full lg:w-4/5 mt-3 lg:mt-5 mx-auto  bg-slate-300  rounded-lg">
                         <button
@@ -1071,22 +998,16 @@ const Projects = () => {
                       <div className="text-black flex flex-row space-x-3 py-2">
                         <span className="group">
                           <SiReact className="hover:text-purple-900  hover:border-purple-900 hover:scale-150 hover:rounded-xl " />
-                          <div className="bg-purple-100 absolute text-purple-900 text-xsm p-1 rounded-md ring-1 ring-purple-900 z-10 group-hover:block hidden mt-2 transition-transform">
-                            ReactJS
-                          </div>
-                        </span>
+                          <Tooltip techname="ReactJS" />
+                          </span>
                         <span className="group">
                           <SiTailwindcss className="hover:text-purple-900  hover:border-purple-900 hover:scale-150 hover:rounded-xl " />
-                          <div className="bg-purple-100 absolute text-purple-900 text-xsm p-1 rounded-md ring-1 ring-purple-900 z-10 group-hover:block hidden mt-2 transition-transform">
-                            TailwindCSS
-                          </div>
-                        </span>
+                          <Tooltip techname="TailwindCSS" />
+                          </span>
                         <span className="group">
                           <AiOutlineApi className="hover:text-purple-900  hover:border-purple-900 hover:scale-150 hover:rounded-xl " />
-                          <div className="bg-purple-100 absolute text-purple-900 text-xsm p-1 rounded-md ring-1 ring-purple-900 z-10 group-hover:block hidden mt-2 transition-transform">
-                            API
-                          </div>
-                        </span>
+                          <Tooltip techname="API" />
+                          </span>
                       </div>
                       <div className="flex flex-row items-center justify-between w-full lg:w-4/5 mt-3 lg:mt-5 mx-auto  bg-slate-300  rounded-lg">
                         <button
@@ -1162,46 +1083,32 @@ const Projects = () => {
                       <div className="text-black flex flex-row space-x-3 py-2">
                         <span className="group">
                           <SiReact className="hover:text-purple-900  hover:border-purple-900 hover:scale-150 hover:rounded-xl " />
-                          <div className="bg-purple-100 absolute text-purple-900 text-xsm p-1 rounded-md ring-1 ring-purple-900 z-10 group-hover:block hidden mt-2 transition-transform">
-                            ReactJS
-                          </div>
-                        </span>
+                          <Tooltip techname="ReactJS" />
+                          </span>
                         <span className="group">
                           <SiMongodb className="hover:text-purple-900  hover:border-purple-900 hover:scale-150 hover:rounded-xl " />
-                          <div className="bg-purple-100 absolute text-purple-900 text-xsm p-1 rounded-md ring-1 ring-purple-900 z-10 group-hover:block hidden mt-2 transition-transform">
-                            MongoDB
-                          </div>
-                        </span>
+                          <Tooltip techname="MongoDB" />
+                          </span>
                         <span className="group">
                           <FaNodeJs className="hover:text-purple-900  hover:border-purple-900 hover:scale-150 hover:rounded-xl " />
-                          <div className="bg-purple-100 absolute text-purple-900 text-xsm p-1 rounded-md ring-1 ring-purple-900 z-10 group-hover:block hidden mt-2 transition-transform">
-                            NodeJS
-                          </div>
-                        </span>
+                          <Tooltip techname="NodeJS" />
+                          </span>
                         <span className="group">
                           <SiBootstrap className="hover:text-purple-900  hover:border-purple-900 hover:scale-150 hover:rounded-xl " />
-                          <div className="bg-purple-100 absolute text-purple-900 text-xsm p-1 rounded-md ring-1 ring-purple-900 z-10 group-hover:block hidden mt-2 transition-transform">
-                            Bootstrap5
-                          </div>
-                        </span>
+                          <Tooltip techname="Bootstrap5" />
+                          </span>
                         <span className="group">
                           <SiLichess className="hover:text-purple-900  hover:border-purple-900 hover:scale-150 hover:rounded-xl " />
-                          <div className="bg-purple-100 absolute text-purple-900 text-xsm p-1 rounded-md ring-1 ring-purple-900 z-10 group-hover:block hidden mt-2 transition-transform">
-                            LiChess
-                          </div>
-                        </span>
+                          <Tooltip techname="LiChess" />
+                          </span>
                         <span className="group">
                           <SiPostman className="hover:text-purple-900  hover:border-purple-900 hover:scale-150 hover:rounded-xl " />
-                          <div className="bg-purple-100 absolute text-purple-900 text-xsm p-1 rounded-md ring-1 ring-purple-900 z-10 group-hover:block hidden mt-2 transition-transform">
-                            Postman
-                          </div>
-                        </span>
+                          <Tooltip techname="Postman" />
+                          </span>
                         <span className="group">
                           <AiOutlineApi className="hover:text-purple-900  hover:border-purple-900 hover:scale-150 hover:rounded-xl " />
-                          <div className="bg-purple-100 absolute text-purple-900 text-xsm p-1 rounded-md ring-1 ring-purple-900 z-10 group-hover:block hidden mt-2 transition-transform">
-                            API
-                          </div>
-                        </span>
+                          <Tooltip techname="API" />
+                          </span>
                       </div>
                       <div className="flex flex-row items-center justify-between w-full lg:w-4/5 mt-3 lg:mt-5 mx-auto  bg-slate-300  rounded-lg">
                         <button
