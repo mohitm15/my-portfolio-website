@@ -63,6 +63,12 @@ const Projects = () => {
                 Welcome To My Projects
               </h2>
             </div>
+            <h1 className="text-4xl text-center md:text-5xl xl:text-6xl font-extrabold text-transparent bg-clip-text bg-gradient-to-br from-pink-400 to-red-600 mb-4 lg:mb-6 xl:mb-8 z-10">
+                Open Source Contributions
+              </h1>
+              <h1 className="text-4xl text-center md:text-5xl xl:text-6xl font-extrabold text-transparent bg-clip-text bg-gradient-to-br from-pink-400 to-red-600 mb-4 lg:mb-6 xl:mb-8 z-10">
+                Personal Projects
+              </h1>
             <div className="p-5 border-2 border-red-400/20 flex flex-col lg:flex-col items-center justify-center bg-[url('../public/stars2.jpg')]">
               {/* 1st row */}
               <div className="p-2 sm:p-10 flex flex-col lg:flex-row items-center space-y-3 lg:space-y-0 lg:space-x-16 justify-center">
